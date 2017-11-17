@@ -4,7 +4,7 @@
 				echo 'your message has been submitted';
 
 				$to = get_option( 'admin_email' );
-				$subject = 'AirProsMechanical Contact Us Form';
+				$subject = 'Air Pros Mechanical Contact Us Form';
 				$message = "Hi admin, \r\n \r\n" 
 							. "A client has submitted through with your contact form with the following details:\r\n \r\n"
 							. "Name: "	.$_POST['contact_name']." \r\n"

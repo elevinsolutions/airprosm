@@ -10,6 +10,15 @@ if (!empty($_POST) && $_POST['action'] == 'subscribe'){
 							'email'=>$_POST['email']
 				));
 
+				// notify admin via email
+				$to = $_POST['email'];
+				$subject = 'Air Pros Mechanical subscription';
+				$message = "Hi user, \r\n \r\n" 
+							. "Thank you for subscribing.";
+
+				
+				wp_mail( $to, $subject, $message );
+
 				echo 'Email Successfully Subscribed!';
 			} catch (Exception $e) {
 				echo $e;

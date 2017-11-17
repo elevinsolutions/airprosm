@@ -13,7 +13,7 @@
 
 				// notify admin via email
 				$to = get_option( 'admin_email' );
-				$subject = 'AirProsMechanical Schedule Form';
+				$subject = 'Air Pros Mechanical Schedule Form';
 				$message = "Hi admin, \r\n \r\n" 
 							. "A client has booked an appintment with the following details:\r\n \r\n"
 							. "Name: "	.$_POST['contact_name']." \r\n"
