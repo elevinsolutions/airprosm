@@ -1,6 +1,30 @@
 <?php session_start(); get_header(); ?>
 
 <section>
+	<h1>Reviews</h1>
+
+	<?php echo do_shortcode('[RICH_REVIEWS_SHOW num="3"]'); ?>
+</section>
+
+<hr>
+
+<section>
+	
+	<h1>Subscribe to newsletter</h1>
+
+	<?php include 'includes/subscribe_form.php'; ?>
+
+	<form method="post" enctype="multipart/form-data" id="subscribe_form">
+		<input type="hidden" name="action" value="subscribe">
+		<input type="email" name="email" 		placeholder="Email" 	maxlength="25">
+		<br>
+		<input type="submit" name="submit" value="Submit">
+	</form>
+</section>
+
+<hr>
+
+<section>
 	
 	<h1>Schedule an Appointment</h1>
 
@@ -8,7 +32,6 @@
 
 	<form method="post" enctype="multipart/form-data" id="schedule_form">
 		<input type="hidden" name="action" value="schedule">
-		<br>
 		<input type="text" 	name="contact_name" placeholder="Name" 		maxlength="25">
 		<br>
 		<input type="email" name="email" 		placeholder="Email" 	maxlength="25">
@@ -35,7 +58,6 @@
 	<form method="post" enctype="multipart/form-data" id="contact_form">
 
 			<input type="hidden" name="action" value="contact">
-			<br>
 			<input type="text" 	name="contact_name" placeholder="Name" 		maxlength="25">
 			<br>
 			<input type="email" name="email" 		placeholder="Email" 	maxlength="25">

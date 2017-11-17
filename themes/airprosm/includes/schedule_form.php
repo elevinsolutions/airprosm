@@ -1,7 +1,6 @@
 <?php 
 	if (!empty($_POST) && $_POST['action'] == 'schedule'){
 			
-
 			global $wpdb;
 
 			try {
@@ -14,7 +13,7 @@
 
 				// notify admin via email
 				$to = get_option( 'admin_email' );
-				$subject = 'AirProsMechanical Schedule Us Form';
+				$subject = 'AirProsMechanical Schedule Form';
 				$message = "Hi admin, \r\n \r\n" 
 							. "A client has booked an appintment with the following details:\r\n \r\n"
 							. "Name: "	.$_POST['contact_name']." \r\n"
