@@ -15,7 +15,7 @@
 				$to = get_option( 'admin_email' );
 				$subject = 'Air Pros Mechanical Schedule Form';
 				$message = "Hi admin, \r\n \r\n" 
-							. "A client has booked an appintment with the following details:\r\n \r\n"
+							. "A client has booked an appointment with the following details:\r\n \r\n"
 							. "Name: "	.$_POST['contact_name']." \r\n"
 							. "email: "	.$_POST['email']." \r\n"
 							. "phone: "	.$_POST['phone']." \r\n"
