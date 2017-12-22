@@ -44,7 +44,7 @@
     </div>
 </section>
 
-<section class="weAre">
+<section id="weAre" class="weAre">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -73,7 +73,7 @@
 
                             </p>
                             <br />
-                            <a href="#">Check out our Products</a>
+                            <a href="<?php echo get_bloginfo('wpurl'); ?>/product">Check out our Products</a>
                         </div>
                     </div>
                 </div>
@@ -160,21 +160,18 @@
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
 					<div class="testimonial4_slide">
-						<img src="http://via.placeholder.com/100x100" class="img-circle img-responsive" />
 						<p>Lorem ipsum dolor sit amet adipiscing elit am nibh unc varius facilisis eros ed erat in in velit quis arcu ornare laoreet urabitur.</p>
 						<h4>Ben Hanna</h4>
 					</div>
 				</div>
 				<div class="item">
 					<div class="testimonial4_slide">
-						<img src="http://via.placeholder.com/100x100" class="img-circle img-responsive" />
 						<p>Lorem ipsum dolor sit amet adipiscing elit am nibh unc varius facilisis eros ed erat in in velit quis arcu ornare laoreet urabitur.</p>
 						<h4>Ben Hanna</h4>
 					</div>
 				</div>
 				<div class="item">
 					<div class="testimonial4_slide">
-						<img src="http://via.placeholder.com/100x100" class="img-circle img-responsive" />
 						<p>Lorem ipsum dolor sit amet adipiscing elit am nibh unc varius facilisis eros ed erat in in velit quis arcu ornare laoreet urabitur.</p>
 						<h4>Ben Hanna</h4>
 					</div>
@@ -192,6 +189,10 @@
 				<a href="#" class="btn btn-default btn-lg">Leave a Review</a>
 		</div>
 	</div>
+</section>
+
+<section style="display:none;">
+	<?php echo do_shortcode('[RICH_REVIEWS_SHOW num="3"]'); ?>
 </section>
 
 <section id="contact">

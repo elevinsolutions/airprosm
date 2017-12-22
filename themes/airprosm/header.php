@@ -213,7 +213,7 @@
         }
         .leftSideWeAre {
             background-color: #f2f2f2;
-            padding: 50;
+            padding: 50px;
         }
         .rightSideWeAre img {
             height: 120px;
@@ -475,13 +475,13 @@
         </div>
         <div class="navbar-collapse collapse navbar-right main-nav" id="navbar">
             <ul class="nav navbar-nav navbar-margin">
-                <li id="sub-1"><a href="#products">Who we are?</a>
+                <li id="sub-1"><a href="#weAre">Who we are?</a>
                 </li>
-                <li id="sub-2"><a href="#features">Products</a>
+                <li id="sub-2"><a href="<?php echo get_bloginfo('wpurl'); ?>/product">Products</a>
                 </li>
-                <li id="sub-3"><a href="#about">Our Service</a>
+                <li id="sub-3"><a href="#services">Our Service</a>
                 </li>
-                <li id="sub-4"><a href="#faqs">Careers</a>
+                <li id="sub-4"><a href="#careers">Careers</a>
                 </li>
             </ul>
             <form class="navbar-form navbar-right">
@@ -493,5 +493,4 @@
         <!--/.navbar-collapse -->
     </div>
 </nav>
-
 <body>
