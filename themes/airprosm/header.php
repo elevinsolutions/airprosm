@@ -133,6 +133,8 @@
         section.testimonials{
           background-color: #000000d6;
           color: white;
+          padding-top: 90px;
+          padding-bottom: 90px;
         }
     </style>
 
@@ -357,7 +359,7 @@
         }
         .testimonial4_header h4 {
             color: #ffffff;
-            font-size: 30px;
+            font-size: 36px;
             font-weight: 600;
             position: relative;
             letter-spacing: 1px;

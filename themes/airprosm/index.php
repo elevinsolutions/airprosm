@@ -146,9 +146,9 @@
 	<div class="container" style="padding-top: 100px;padding-bottom: 100px;">
 			
 			<div class="col-xs-6">
-				<h1>Be part of our team!</h1>
+				<h1 style="font-size: 42px;">Be part of our team!</h1>
 
-				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequunter magni dolores eos qui ratione.</p>
+				<p style="font-size: 28px;color: #b1b1b1;">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequunter magni dolores eos qui ratione.</p>
 			</div>
 
 
