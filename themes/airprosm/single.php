@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+<br>
+<br>
+<br>
+<br>
+
 <?php get_sidebar(); ?>
 
 <code style="display:none;">single.php</code>

@@ -7,7 +7,8 @@ if (!empty($_POST) && $_POST['action'] == 'subscribe'){
 			try {
 				// save the appointment to db
 				$wpdb->insert($wpdb->prefix . "subscriptions",array(
-							'email'=>$_POST['email']
+							'email'=>$_POST['email'],
+							'phone'=>$_POST['phone']
 				));
 
 				// notify admin via email

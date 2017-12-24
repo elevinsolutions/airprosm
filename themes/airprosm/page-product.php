@@ -1,5 +1,10 @@
 <?php session_start(); get_header(); ?>
 
+<br>
+<br>
+<br>
+<br>
+
 <?php get_sidebar(); ?>
 
 <section id="content" role="main" class="col-sm-12 col-md-9 col-lg-9">
@@ -27,9 +32,6 @@
 
 	<? endif; ?>
 <? endforeach; ?>
-
-
-
 
     <?php get_template_part( 'nav', 'below' ); ?>
 </section>

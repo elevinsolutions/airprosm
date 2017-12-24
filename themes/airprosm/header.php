@@ -111,8 +111,9 @@
             background-color: rgba(255, 255, 255, 0.5);
             padding-bottom: 100px;
         }
-        .contact_form input,
-        textarea {
+        .contact_form input, .contact_form textarea,
+        .review_form input, .review_form textarea,
+        .career_form input, .career_form textarea{
             margin-bottom: 20px;
             height: 45px;
             padding: 4px 4px 4px 15px;
@@ -120,8 +121,17 @@
             color: #000000;
             font-size: 17px;
         }
+
+        .review{
+            background-image: url(<?php echo get_template_directory_uri(); ?>/images/hvac.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+/*            height: 550px;
+*/            background-size: cover;
+        }
+
         section.testimonials{
-          background-color: rgb(52, 73, 94);
+          background-color: #000000d6;
           color: white;
         }
     </style>
@@ -177,7 +187,6 @@
         .whyUs {
             height: 400px;
             margin-top: 150px;
-            margin-bottom: 50px;
         }
         .whyUs h3 {
             font-size: 24px;
@@ -200,8 +209,7 @@
             margin: 0 auto;
         }
         .weAre {
-            padding-top: 20px;
-            padding-bottom: 100px;
+            padding-top: 100px;
         }
         .weAre p {
             line-height: 1.9;
@@ -225,7 +233,6 @@
             font-size: 21px;
         }
         .services {
-            padding-top: 100px;
             padding-bottom: 100px;
         }
         .services h3 {
@@ -239,7 +246,6 @@
             overflow: hidden;
             min-height: 375px;
             position: relative;
-            background: rgb(52, 73, 94);
         }
         #testimonial4 .carousel-inner {
             width: 75%;
@@ -264,7 +270,6 @@
             height: 20px;
             bottom: 15px;
             padding: 0 5px;
-            cursor: e-resize;
             overflow-x: auto;
             overflow-y: hidden;
             position: absolute;
@@ -290,7 +295,7 @@
             height: 10px;
             border: none;
             margin: 2px 3px;
-            background-color: #000;
+            background-color: red;
             -webkit-border-radius: 100%;
             border-radius: 100%;
         }
@@ -471,21 +476,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="<?php echo get_site_url(); ?>"></a>
         </div>
         <div class="navbar-collapse collapse navbar-right main-nav" id="navbar">
             <ul class="nav navbar-nav navbar-margin">
-                <li id="sub-1"><a href="#weAre">Who we are?</a>
+                <li id="sub-1"><a href="<?php echo get_bloginfo('wpurl'); ?>#weAre" onclick="scrollToPage('weAre');return false;">Who we are?</a>
                 </li>
                 <li id="sub-2"><a href="<?php echo get_bloginfo('wpurl'); ?>/product">Products</a>
                 </li>
-                <li id="sub-3"><a href="#services">Our Service</a>
+                <li id="sub-3"><a href="<?php echo get_bloginfo('wpurl'); ?>#services" onclick="scrollToPage('services');return false;">Our Service</a>
                 </li>
-                <li id="sub-4"><a href="#careers">Careers</a>
+                <li id="sub-4"><a href="<?php echo get_bloginfo('wpurl'); ?>#testimonials" onclick="scrollToPage('testimonials');return false;">Testimonials</a>
+                </li>
+                <li id="sub-5"><a href="<?php echo get_bloginfo('wpurl'); ?>#careers" onclick="scrollToPage('careers');return false;">Careers</a>
                 </li>
             </ul>
             <form class="navbar-form navbar-right">
-                <button type="submit" class="btn btn-warning">Get a Quote</button>
+                <button type="button" data-toggle="modal" data-target="#quoteModal" class="btn btn-warning">Get a Quote</button>
 
             </form>
             <div class="bottom-arrow"></div>
