@@ -1,31 +1,32 @@
 <?php session_start(); get_header(); ?>
 
 <section class="hero">
-    <div class="row">
         <div class="heroImage">
-            <div class="heroInsideContent" style="padding-top: 350px; text-align:center;">
-                <h2>We make families stay at home</h2>
-                <h4>AirPro's Mechanical. A heating and air conditioning company.</h4>
-                <div style="margin-bottom:50px"></div>
-                <div class="row">
-                    <div class="heroBox" style="margin-top: 10px; padding-top:50px; padding-bottom:70px; width:600px; background-color: #790202ab; margin: 0 auto;">
+            <div class="heroInsideContent" style="text-align:center;">
+            	<div class="container">
+	                <h2>Stay Comfortable At Home All Year Round</h2>
+	                <h4>Air Pros Mechanical has the solution for every heating and air conditioning needs.</h4>
+	                <div style="margin-bottom:50px"></div>
 
-                    <?php include 'includes/subscribe_form.php'; ?>
+	                <?php include 'includes/subscribe_form.php'; ?>
+	                
+	                <div class="row">
+	                    <div class="heroBox col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top: 10px; padding-top:50px; padding-bottom:125px; background-color: #790202ab;">
 
-					<form method="post" enctype="multipart/form-data" id="subscribe_form" style="color: black;"> 
-						<input type="hidden" name="action" value="subscribe">
+						<form method="post" enctype="multipart/form-data" id="subscribe_form" style="color: black;"> 
+							<input type="hidden" name="action" value="subscribe">
 
-                        <input class="col-md-offset-1 col-md-4" type="email" name="email" placeholder="Email Address" />
-                        <input class="col-md-4 col-md-offset-1" type="text" name="phone" placeholder="Phone Number" />
+	                        <input class="col-xs-5 col-xs-offset-1 col-md-offset-2 col-md-4" type="email" name="email" placeholder="Email Address" required />
+	                        <input class="col-xs-5 col-md-4" style="margin-left:10px;" type="text" name="phone" placeholder="Phone Number" required />
 
-                        <br />
-                        <input type="submit" class="btn-hero btn-lg btn-primary" style="margin-top:20px;">
-                    </form>
-                    </div>
-                </div>
+	                        <br />
+	                        <input type="submit" class="btn-hero btn-lg btn-primary" style="margin-top:20px;">
+	                    </form>
+	                    </div> <!-- heroBox -->
+	                </div>
+            	</div>
             </div>
         </div>
-    </div>
 </section>
 
 <section id="weAre" class="weAre">
@@ -36,28 +37,33 @@
                     <h4>We are..</h4>
                     <h1>Air Pros Mechanical</h1>
 
-                    <p>We pride ourself on being a one stop shop that is able to meet all of our client’s needs. Our goal is to provide the highest quality design and installation services, on schedule, and on budget along with outstanding customer service.We understand that time and cost are crucial so we strive to go above and beyond our client’s expectations. For our customers peace of mind, we offer valuable money saving service and maintenance contracts. Please call for additional details.</p>
+                    <p>Since 2013, Air Pros Mechanical, Inc. has been installing and repairing heating and air conditioning systems in Chicagoland and surrounding suburbs. We are an authorized Bryant dealer with a team of highly-trained, licensed sales engineers and field technicians. Integrity is our foremost value and we assure transparency when it comes to telling customers how much it would cost to complete the job perfectly. This is why we are one of the most trusted HVAC companies in our service area.
+
+Call us today and let’s talk about how we can help you with your HVAC needs.
+</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="rightSideWeAre">
-                    <div class="col-md-4">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/productsSlideshow.png">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/productsSlideshow.png">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/productsSlideshow.png">
+                	<div class="rightSideImages">
+	                    <div class="col-md-3 col-sm-4 col-xs-4">
+	                        <img src="<?php echo get_template_directory_uri(); ?>/images/weAreImage1.jpg">
+	                    </div>
+	                    <div class="col-md-3  col-md-offset-1 col-sm-4 col-xs-4">
+	                        <img src="<?php echo get_template_directory_uri(); ?>/images/weAreImage3.jpg">
+	                    </div>
+	                    <div class="col-md-3  col-md-offset-1 col-sm-4 col-xs-4">
+	                        <img src="<?php echo get_template_directory_uri(); ?>/images/weAreImage2.jpg">
+	                    </div>
                     </div>
                     <div class="col-md-12">
                         <div class="rightSideText">
                             <h4>Our Products</h4>
-                            <p>We have over 25 years experience in the heating, ventilation and air conditioning industry (HVAC). We believe in quality customer service. We are here when you need us to service both your residential and commercial properties!
+                            <p>We have over 10 years experience in the heating, ventilation and air conditioning industry (HVAC). We believe in quality customer service. We are here when you need us to service both your residential and commercial properties!
 
                             </p>
                             <br />
-                            <a href="<?php echo get_bloginfo('wpurl'); ?>/product">Check out our Products</a>
+                            <a class="btn checkOutProducts" href="<?php echo get_bloginfo('wpurl'); ?>/product">Check out our Products</a>
                         </div>
                     </div>
                 </div>
@@ -66,78 +72,108 @@
     </div>
 </section>
 
+
+<section>
+    <div class="parallax-one text-center">
+      <h2 style="color: white;
+    text-align: center;
+    font-size:42px;">CUSTOMER SATISFACTION GUARANTEED</h2>
+
+	    <div style="padding-top: 15px; padding-bottom: 15px;">
+
+	    <div class="clearfix"> 
+			<p class="col-md-8 col-md-offset-2 col-xs-12" style="color:white; font-size: 18px;">As an authorized Bryant dealer, we provide top-of-the line equipment to our customers. Our sales engineers and field technicians are certified experts with hundreds of successful projects under their hands.  You can rely on us to get best-in-class service that is tailor-fit to your preferences and budget.
+
+			Call us now and we’ll gladly assist you with any heating and air conditioning needs.
+			</p>
+		</div>
+
+	    </div>
+
+    </div>
+</section>
+
+
 <section id="services" class="services">
 
-	<div class="container" style="padding-top: 150px;">
+	<div class="container" style="padding-top: 100px;">
+		<div class="row text-center">
+         <h2 style="font-size: 35px;
+    margin-bottom: 50px; color: #ab1e1e;">We Service All Makes and Models</h2>
+		</div>
 		<div class="row text-center"><br>
-	        <div class="col-md-4 col-sm-4">
-	            <img src="http://placehold.it/150/ffa500/ffffff/?text=Service%201" alt="" class="img-circle img-thumbnail">
-	            <h3>Our Services</h3>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-	            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+	        <div class="col-md-4 col-sm-4" style="margin-bottom:70px;">
+	            <i class="fa fa-wrench circularIcon" aria-hidden="true"></i>
+	            <h3>Repair</h3>
+	            <p>A broken heater or AC should not disrupt your life or take away the usual level of comfort in your indoor space for too long. Call Air Pros and a team of highly-experienced technicians will come to get your broken unit up and running in no time.</p>
 	        </div>
-	        <div class="col-md-4 col-sm-4">
-	            <img src="http://placehold.it/150/ffa500/ffffff/?text=Service%202" alt="" class="img-circle img-thumbnail">
-	            <h3>Our Services</h3>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-	            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+	        <div class="col-md-4 col-sm-4" style="margin-bottom:70px;">
+	            <i class="fa fa-cogs circularIcon" aria-hidden="true"></i>
+	            <h3>Maintenance</h3>
+	            <p>Make your heater and air conditioner function at its best for the maximum lifespan by having them regularly checked and fine-tuned. Save yourself from the hassle by getting proper maintenance. This does not only prevent trouble but also means more savings in the long run.</p>
 	        </div>
-	        <div class="col-md-4 col-sm-4">
-	            <img src="http://placehold.it/150/ffa500/ffffff/?text=Service%203" alt="" class="img-circle img-thumbnail">
-	            <h3>Our Services</h3>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-	            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+	        <div class="col-md-4 col-sm-4" style="margin-bottom:70px;"> 
+	            <i class="fa fa-thermometer-three-quarters circularIcon" aria-hidden="true"></i>
+	            <h3>Installation</h3>
+	            <p>Installation of new equipment is a guaranteed stress-free experience for our clients. We get it done right and right away. Unsure of what product best suits your needs? We are here to help. We always make sure that our customers are happy with their purchase and new installation in their homes and offices.</p>
 	        </div>
+		</div>
+		<div class="row text-center">
+	         <h4 style="font-size: 18px;
+    margin-top: 30px; color:#ab1e1e;">Boilers - Air Conditioners - Heaters - Furnaces - Heat Pumps - Air Filtration - System Controls
+			 </h4>
 		</div>
 	</div>
 	
 </section>
 
 <section id="testimonials" class="testimonials">
-	<div style="padding-bottom: 50px; padding-top: 50px;">
-		<div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x text-center" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-			<div class="testimonial4_header">
-				<h4>What our clients are saying</h4>
-			</div>
-			<ol class="carousel-indicators" style="top: 360px;">
-				<li data-target="#testimonial4" data-slide-to="0" class="active"></li>
-				<li data-target="#testimonial4" data-slide-to="1"></li>
-				<li data-target="#testimonial4" data-slide-to="2"></li>
-			</ol>
-
-			<i class="fa fa-quote-left" aria-hidden="true" style="color: red; font-size: 25px;"> </i>
-
-			<div class="carousel-inner" role="listbox" style="height: 200px;">
-
-
+	<div class="container-fluid">
+		<div style="padding-bottom: 50px; padding-top: 20px;">
+			<div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x text-center" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+				<div class="testimonial4_header">
+					<h4>What our clients are saying</h4>
+				</div>
 
 				<? 
 					global $wpdb;
 					$reviews = $wpdb->get_results( "SELECT * FROM `".$wpdb->prefix."richreviews` where review_status = '1'", OBJECT );
 				?>
-				<? foreach ($reviews as $index => $review): ?>
 
-					<? $active_class = ($index == 0) ? 'active' : '' ; ?>
-					<div class="item <?=$active_class?>">
-						<div class="testimonial4_slide">
-							<p><?=$review->reviewer_name?></p>
-							<h4><?=$review->review_text?></h4>
+				<i class="fa fa-quote-left" aria-hidden="true" style="color: red; font-size: 25px;"> </i>
+
+				<div class="carousel-inner" role="listbox">
+
+					<? foreach ($reviews as $index => $review): ?>
+
+						<? $active_class = ($index == 0) ? 'active' : '' ; ?>
+						<div class="item <?=$active_class?>">
+							<div class="testimonial4_slide">
+								<p><?=$review->review_text?></p>
+								<h4><?=$review->reviewer_name?></h4>
+							</div>
 						</div>
-					</div>
 
-				<? endforeach; ?>
+					<? endforeach; ?>
 
-				
+				</div>
+
+				<i class="fa fa-quote-right" aria-hidden="true" style="color: red; font-size: 25px;"></i>
+				<a class="left carousel-control" href="#testimonial4" role="button" data-slide="prev">
+					<span class="fa fa-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#testimonial4" role="button" data-slide="next">
+					<span class="fa fa-chevron-right"></span>
+				</a>
+
+				<ol class="carousel-indicators" style="margin-top: 10px;position: unset;">
+					<? foreach ($reviews as $index => $review): ?>
+					<? $active_class = ($index == 0) ? 'active' : '' ; ?>
+						<li data-target="#testimonial4" data-slide-to="<?=$index?>" class="<?=$active_class?>"></li>
+					<? endforeach; ?>
+				</ol>
 
 			</div>
-
-			<i class="fa fa-quote-right" aria-hidden="true" style="color: red; font-size: 25px;"></i>
-			<a class="left carousel-control" href="#testimonial4" role="button" data-slide="prev">
-				<span class="fa fa-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#testimonial4" role="button" data-slide="next">
-				<span class="fa fa-chevron-right"></span>
-			</a>
 		</div>
 	</div>
 </section>
@@ -145,30 +181,39 @@
 <section id="careers" class="careers">
 	<div class="container" style="padding-top: 100px;padding-bottom: 100px;">
 			
-			<div class="col-xs-6">
-				<h1 style="font-size: 42px;">Be part of our team!</h1>
+			<div class="col-xs-12 col-sm-5">
+				<h1>Be part of our team!</h1>
 
-				<p style="font-size: 28px;color: #b1b1b1;">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequunter magni dolores eos qui ratione.</p>
+				<p>We are looking for skilled, reliable, and customer-focused technicians. Send us your resume and be part of our growing team.</p>
 			</div>
 
 
-			<div class="col-xs-6">
-				<div class="well" style="padding-top: 50px;padding-bottom: 50px;padding-left: 50px;padding-right: 50px;background-color: #D8D8D8;border-radius: 0px;">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-1">
+				<div class="well">
 					
 					<?php include 'includes/career_form.php'; ?>
 
-					<form method="post" enctype="multipart/form-data" id="career_form" class="career_form">  
+					<form method="post" enctype="multipart/form-data" id="career_form" class="career_form" onsubmit="return check_upload();" action="#careers">  
 						<input type="hidden" name="action" value="apply_career">
-						<div col-xs-12> 
-							<input type="text" name="contact_name" placeholder="Full Name*">
+						<div> 
+							<input type="text" name="contact_name" placeholder="Full Name*" required>
 						</div>
-						<div col-xs-12> 
-							<input type="contact_number" name="contact_number" placeholder="Contact Number*">
+						<div> 
+							<input type="contact_number" name="contact_number" placeholder="Contact Number*" required> 
 						</div>
-						<div col-xs-12> 
-							<input type="email" name="email" placeholder="Email Address">
+						<div> 
+							<input type="email" name="email" placeholder="Email Address" required>
 						</div>
-						<div col-xs-12>
+						<div class="input-group" style="margin-bottom: 20px;"> 
+                        	<input class="form-control disabled" placeholder="" id="upload-file-info" disabled=""> 
+                            <span class="input-group-btn"> 
+	                            <label class="btn btn-default" for="resume-upload" id="resume-upload-label" style="padding-top: 11px; height: 45px;">
+	                                <input name="resume" id="resume-upload" type="file" style="display:none" accept="" onchange="$('#upload-file-info').val(this.files[0].name)" required>Upload Resume
+	                            </label>
+                            </span> 
+                            
+                        </div>
+						<div>
 				 		<button class="btn btn-default btn-block btn-lg" type="submit" name="button">
 				        	Apply
 				      	</button>
@@ -182,85 +227,33 @@
 <section id="review" class="review">
 	<div class="container" style="padding-top: 50px;padding-bottom: 50px;">
 
-			<h1 style="text-align: center; font-size: 50px;">Write a review</h1>
-			<p class="text-center">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+			<h1 style="text-align: center; font-size: 50px;">Write a Review</h1>
+			<p class="text-center" style="margin-bottom: 50px;">We’d love to hear your feedback! Tell us about your experience with Air Pros Mechanical.</p>
 
 			<?php include 'includes/review_form.php'; ?>
 
-			<form method="post" id="review_form"  class="review_form" style="text-align: center;">
+			<form method="post" id="review_form"  class="review_form" style="text-align: center;" action="#review">
 				<input type="hidden" name="action" value="review">
 
-				<div class="col-xs-4 col-xs-offset-2">
-					<input type="text" name="contact_name" placeholder="Name">
+				<div class="col-xs-12 col-sm-4 col-sm-offset-2">
+					<input type="text" name="contact_name" placeholder="Name" required>
 				</div>
 
-				<div class="col-xs-4">
-					<input type="email" name="email" placeholder="E-mail">
+				<div class="col-xs-12 col-sm-4">
+					<input type="email" name="email" placeholder="E-mail" required>
 				</div>
 
-				<div class="col-xs-8 col-xs-offset-2">
-		 			<textarea name="message" rows="3" style="height: 250px;" placeholder="Message"></textarea>
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+		 			<textarea name="message" rows="3" style="height: 250px;" placeholder="Message" required></textarea>
 		 		</div>
 
-		 		<div class="col-xs-4 col-xs-offset-4">
+		 		<div class="col-xs-12 col-sm-4 col-sm-offset-4">
 			 		<button class="btn btn-default btn-block btn-lg" type="submit" name="button">Submit</button>
 		      	</div>
 	      	</form>
       	
 	</div>
 </section>
-
-<!-- line modal -->
-<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-	<div class="modal-content">
-
-	<?php include 'includes/quote_form.php'; ?>
-	<form method="post" enctype="multipart/form-data">
-	<input type="hidden" name="action" value="quote">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-			<h3 class="modal-title" id="lineModalLabel">Get a Quote</h3>
-		</div>
-
-		<div class="modal-body">
-			
-            <!-- content goes here -->
-
-				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<h4>Contact Info</h4>
-						<input type="text" name="contact_name" class="form-control" placeholder="Full Name"> <br>
-						<input type="email" name="email" class="form-control" placeholder="Email"> <br>
-						<input type="text" name="phone" class="form-control" placeholder="Contact Number">
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<h4>What are you inquiring about?</h4>
-						<select name="category" class="form-control" name="category">
-							<option> -- Select Product (if applicable) -- </option>
-
-							<? foreach(get_categories() as $category): ?>
-
-								<option value="<?= $category->cat_name; ?>"><?= $category->cat_name; ?></option>
-
-							<? endforeach; ?>
-						</select> <br>
-						<textarea name="comment" style="height: 90px;" class="form-control" placeholder="Comments"></textarea>
-					</div>
-				</div>
-
-		</div>
-
-		<div class="modal-footer">
-			<div class="btn-group" role="group">
-				<button type="submit" class="btn btn-default btn-hover-green pull-right" data-action="save" role="button">Submit</button>
-			</div>
-		</div>
-	</form>
-
-	</div>
-  </div>
-</div>
 
 <script type="text/javascript">
 	
@@ -270,6 +263,25 @@
             scrollTop: $("#"+section).offset().top
         }, 1000);
     }
+
+    function check_upload(){
+    	var extension = $('#resume-upload').val().split('.').pop().toLowerCase();
+		if($.inArray(extension, ['pdf']) == -1) {
+		    alert('Please Upload PDF files only.');
+		    return false;
+		}
+
+		var file_size = $('#resume-upload')[0].files[0].size; // in bytes
+    	if (file_size > 499999){
+    		alert('The file could not be uploaded because it is larger than the maximum allowed file size of 500 MB.');
+    		return false;
+    	}
+    }
+
+    $('#resume-upload').change(function () {
+		check_upload();
+	});
+
 
 </script>
 <?php get_footer(); ?>

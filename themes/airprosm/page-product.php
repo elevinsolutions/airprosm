@@ -1,13 +1,10 @@
 <?php session_start(); get_header(); ?>
 
 <br>
-<br>
-<br>
-<br>
 
 <?php get_sidebar(); ?>
 
-<section id="content" role="main" class="col-sm-12 col-md-9 col-lg-9">
+<section id="content" role="main" class="col-sm-12 col-md-9 col-lg-9" style="padding-bottom:200px;">
 
 <? foreach(get_categories() as $category): ?>
 	<? if ($category->category_parent == 0): ?>

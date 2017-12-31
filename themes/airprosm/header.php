@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -38,11 +40,25 @@
             background-repeat: no-repeat;
             width: 200px;
             padding-bottom: 50px;
+            margin-left: 20px;
         }
         .navbar-form .btn-warning {
-            background-color: #544f48;
+            background-color: #ffffff;
+            color: #8a1e1e;
             border: none;
             margin-top: 13px;
+            transform: perspective(1px) translateZ(0);
+            transition-property: color,background-color;
+            transition-duration: .2s;
+        }
+
+        .navbar-toggle {
+            margin-top: 15px;
+        }
+
+        .navbar-form .btn-warning:hover {
+            background-color: #3a3a3a;
+            color: #ffffff;
         }
         .navbar-margin {
             margin-top: 10px;
@@ -72,9 +88,9 @@
             border-top: 1px solid #d6d6d6;
         }
         .btn-danger {
-            color: #fff;
-            background-color: #e44424;
-            border-color: #b02f15;
+            color: #ffffff;
+            background-color: #3e3d3d;
+            border-color: #848484;
         }
         .btn-danger:hover {
             background-color: #b02f15
@@ -99,7 +115,7 @@
         .footerContainer {
             background-color: #252525;
             padding-bottom: 100px;
-            padding-top: 50px;
+
         }
         .testimonial {
             display: inline-block;
@@ -123,25 +139,54 @@
         }
 
         .review{
-            background-image: url(<?php echo get_template_directory_uri(); ?>/images/hvac.jpg);
+            padding-top:50px;
+            padding-bottom:50px;
             background-repeat: no-repeat;
             width: 100%;
 /*            height: 550px;
 */            background-size: cover;
         }
+        
+        .review h1 {
+            text-align: center;
+            font-size: 50px;
+            color: #a72727;
+        }
 
+        .review button {
+            color: #585858;
+            border: 1px solid;
+            border-color:#afafaf;
+        }
+
+        .review button:hover {
+            color: white;
+            border: 1px solid;
+            background-color: #a52424;
+            transform: perspective(1px) translateZ(0);
+            transition-property: color,background-color;
+            transition-duration: .2s;
+        }
         section.testimonials{
           background-color: #000000d6;
           color: white;
-          padding-top: 90px;
-          padding-bottom: 90px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+
+        a.our_products_link:hover{
+            color: white;
         }
     </style>
 
     <!-- JOVIN -->
     <style>
+
+        p {
+            font-size: 17px;
+        }
         .navbar-inverse {
-            background-color: #e05454;
+            background-color: #a52424e8;
             border-color: transparent;
         }
         .navbar-inverse .navbar-nav>li>a {
@@ -153,11 +198,7 @@
             width: 200px;
             padding-bottom: 50px;
         }
-        .navbar-form .btn-warning {
-            background-color: #544f48;
-            border: none;
-            margin-top: 13px;
-        }
+
         .navbar-margin {
             margin-top: 10px;
         }
@@ -173,10 +214,12 @@
             width: 100%;
             height: 780px;
             background-size: cover;
+            box-shadow:inset 0 0 0 2000px rgba(68, 68, 68, 0.22);
         }
         .heroInsideContent {
             color: white;
             text-shadow: 0px 0px 10px rgb(85, 85, 85);
+            padding-top: 350px;
         }
         .hero input {
             height: 40px;
@@ -211,7 +254,9 @@
             margin: 0 auto;
         }
         .weAre {
-            padding-top: 100px;
+            margin-top: 100px;
+            padding-top: 20px;
+            padding-bottom: 100px;
         }
         .weAre p {
             line-height: 1.9;
@@ -225,20 +270,99 @@
             background-color: #f2f2f2;
             padding: 50px;
         }
+
+        .leftSideWeAre h1 {
+            color: #b12c14;
+        }
         .rightSideWeAre img {
-            height: 120px;
+            height: 110px;
             width: 100%;
         }
+
         .rightSideWeAre h4 {
             color: #b12c14;
             margin-top: 50px;
-            font-size: 21px;
+            font-size: 29px;
+        }
+
+        .rightSideWeAre .checkOutProducts {
+            border: 1px solid;
+            color: white;
+            background-color: #3c3c3c;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            margin-top: 30px;
+            transform: perspective(1px) translateZ(0);
+            transition-property: color,background-color;
+            transition-duration: .3s;
+        }
+
+        .checkOutProducts:hover {
+            background-color: #ffffff;
+            color:black;
         }
         .services {
             padding-bottom: 100px;
         }
         .services h3 {
             color: #ab1e1e;
+        }
+
+        .well {
+            padding-top: 50px;
+            padding-bottom: 90px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: #b9b9b924;;
+            border-radius: 0px;
+        }
+        
+        .careers {
+            background-color: #fafafa;
+            padding-top:50px;
+            padding-bottom:50px;
+        }
+        .careers h1 {
+            font-size: 52px;
+            color: #ab4646;
+        }
+
+        .careers p {
+            color: #8d8f93;
+            font-size: 18px;
+            line-height: 1.9;
+            font-style: italic;
+        }
+
+        .careers button:hover {
+            transform: perspective(1px) translateZ(0);
+            transition-property: color,background-color;
+            transition-duration: .2s;
+            color: white;
+            background-color: #a52424;
+        }
+
+        textarea {
+            border-color: #c3c3c3;
+        }
+
+        .caption h4 {
+            height: 40px;
+        }
+
+        .caption button{
+            color: #060606;
+            background-color: #ffffff;
+            border-color: #848484;
+        }
+
+        #sidebar {
+            margin-top: 60px;
+        }
+
+        #content {
+            margin-top: 60px;
         }
     </style>
 
@@ -252,6 +376,7 @@
         #testimonial4 .carousel-inner {
             width: 75%;
             margin: auto;
+
         }
         #testimonial4 .carousel-inner:hover {
             cursor: -moz-grab;
@@ -274,7 +399,6 @@
             padding: 0 5px;
             overflow-x: auto;
             overflow-y: hidden;
-            position: absolute;
             text-align: center;
             white-space: nowrap;
         }
@@ -322,7 +446,6 @@
             line-height: 38px;
             text-shadow: none;
             text-align: center;
-            position: absolute;
             background: transparent;
             border: 2px solid #ffffff;
             text-transform: uppercase;
@@ -375,6 +498,7 @@
             padding: 20px;
             position: relative;
             text-align: center;
+            padding-top: 0;
         }
         .testimonial4_slide img {
             top: 0;
@@ -394,12 +518,137 @@
             color: #ffffff;
             font-size: 16px;
             margin: 40px 0 20px 0;
+            font-style: italic;
         }
         .testimonial4_slide h4 {
             color: #ffffff;
             font-size: 24px;
             font-weight: bold;
         }
+
+        .services {
+            margin-top:20px;
+          }
+
+          .services h3 {
+            color:#ab1e1e;
+          }
+
+           .parallax-one {
+            padding-top: 150px;
+            padding-bottom: 150px; 
+            overflow: hidden; position: 
+            relative; 
+            width: 100%; 
+            background-image: url(<?php echo get_template_directory_uri(); ?>/images/parallax1.jpeg);
+            background-attachment: fixed; 
+            background-size: cover; 
+            -moz-background-size: cover; 
+            -webkit-background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: top center;     
+            text-shadow: 0px 0px 10px rgb(85, 85, 85);
+            box-shadow: inset 0 0 0 2000px rgba(68, 68, 68, 0.46);
+           }
+
+           .parallax-one h2 {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: white;
+            text-align: center;
+            font-size:42px;
+           }
+           
+           .parallax-one p {
+             color: white;
+             font-size: 16px;
+             margin-top: 15px;
+             line-height: 1.9;
+           }
+
+           .circularIcon {
+             font-size: 70px;
+            border-radius: 50%;
+            border: 1px solid #d4d4d4;
+            padding: 44px;
+            height: 155px;
+            width: 155px;
+            color: #a52424;
+           }
+        
+        @media(max-width: 550px) {
+            
+            .navbar-inverse {
+                background-color: #dc4848;
+                border-color: transparent;
+            }
+
+            .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+                box-shadow: inset 0 0 0 2000px rgba(21, 1, 1, 0.18);
+                background-color:white;
+            }
+
+            .navbar-inverse .navbar-toggle .icon-bar {
+                background-color: red !important;
+            }
+
+            .navbar-toggle {
+                border:none;
+                background-color: white;
+            }
+            .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+                border-color: transparent;
+            }
+
+            .navbar-form .btn-warning {
+                margin-top:0;
+            }
+            .heroImage {
+                height:635px;
+                background-position:center;
+            }
+
+            .heroInsideContent {
+                padding-top:150px;
+            }
+
+            .hero .btn-hero {
+                width: 250px !important;
+            }
+
+            .rightSideWeAre img {
+                height: 110px;
+                width: 100%;
+                padding-bottom:30px;
+             }
+
+             .parallax-one {
+                box-shadow: inset 0 0 0 2000px rgba(68, 68, 68, 0.68);
+                padding-top: 50px;
+                padding-bottom: 50px;
+                background-image:none;
+                background-color: rgb(44, 62, 80);
+
+             }
+
+             .parallax-one p {
+                text-align:left;
+             }
+
+             #testimonial4 .carousel-inner {
+                margin-top: -20px;
+             }
+
+
+
+             input {
+                border-color: white;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border: 1px solid #b9b9b9;
+
+                }
+             }
+
         @media only screen and (max-width: 480px) {
             .testimonial4_control_button .carousel-control {
                 display: none;
@@ -482,13 +731,13 @@
         </div>
         <div class="navbar-collapse collapse navbar-right main-nav" id="navbar">
             <ul class="nav navbar-nav navbar-margin">
-                <li id="sub-1"><a href="<?php echo get_bloginfo('wpurl'); ?>#weAre" onclick="scrollToPage('weAre');return false;">Who we are?</a>
+                <li id="sub-1"><a href="<?php echo get_bloginfo('wpurl'); ?>#weAre" onclick="scrollToPage('weAre');return false;">Who we are</a>
                 </li>
                 <li id="sub-2"><a href="<?php echo get_bloginfo('wpurl'); ?>/product">Products</a>
                 </li>
-                <li id="sub-3"><a href="<?php echo get_bloginfo('wpurl'); ?>#services" onclick="scrollToPage('services');return false;">Our Service</a>
+                <li id="sub-3"><a href="<?php echo get_bloginfo('wpurl'); ?>#services" onclick="scrollToPage('services');return false;">Services</a>
                 </li>
-                <li id="sub-4"><a href="<?php echo get_bloginfo('wpurl'); ?>#testimonials" onclick="scrollToPage('testimonials');return false;">Testimonials</a>
+                <li id="sub-4"><a href="<?php echo get_bloginfo('wpurl'); ?>#testimonials" onclick="scrollToPage('testimonials');return false;">Reviews</a>
                 </li>
                 <li id="sub-5"><a href="<?php echo get_bloginfo('wpurl'); ?>#careers" onclick="scrollToPage('careers');return false;">Careers</a>
                 </li>
@@ -502,4 +751,57 @@
         <!--/.navbar-collapse -->
     </div>
 </nav>
+
+<!-- line modal -->
+<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+    <?php include 'includes/quote_form.php'; ?>
+    <form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="action" value="quote">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h3 class="modal-title" id="lineModalLabel">Get a Quote</h3>
+        </div>
+
+        <div class="modal-body">
+            
+            <!-- content goes here -->
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Contact Info</h4>
+                        <input type="text" name="contact_name" class="form-control" placeholder="Full Name" required> <br>
+                        <input type="email" name="email" class="form-control" placeholder="Email" required> <br>
+                        <input type="text" name="phone" class="form-control" placeholder="Contact Number" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>What are you inquiring about?</h4>
+                        <select name="category" class="form-control" name="category" required>
+                            <option> -- Select Product (if applicable) -- </option>
+
+                            <? foreach(get_categories() as $category): ?>
+
+                                <option value="<?= $category->cat_name; ?>"><?= $category->cat_name; ?></option>
+
+                            <? endforeach; ?>
+                        </select> <br>
+                        <textarea name="comment" style="height: 90px;" class="form-control" placeholder="Comments" required></textarea>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="modal-footer">
+            <div class="btn-group" role="group">
+                <button type="submit" class="btn btn-default btn-hover-green pull-right" data-action="save" role="button">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    </div>
+  </div>
+</div>
+
 <body>

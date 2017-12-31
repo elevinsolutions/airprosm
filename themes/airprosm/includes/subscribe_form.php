@@ -20,10 +20,21 @@ if (!empty($_POST) && $_POST['action'] == 'subscribe'){
 				
 				wp_mail( $to, $subject, $message );
 
-				echo 'Email Successfully Subscribed!';
+				// $alert_class = 'alert-success';
+				// $alert_message = 'Email successfuly subscribed.';
+
+				echo "<script>alert('Email successfuly subscribed.');</script>";
+
 			} catch (Exception $e) {
-				echo $e;
+				// $alert_class = 'alert-danger';
+				// $alert_message = 'Oops, something went wrong on our end. Please try submitting again in a little while.';
+				echo "<script>alert('Oops, something went wrong on our end. Please try submitting again in a little while.');</script>";
 			}	
+
+
+			?>
+
+<?php
 
 }
 

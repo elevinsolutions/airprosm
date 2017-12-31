@@ -11,11 +11,21 @@ if (!empty($_POST) && $_POST['action'] == 'review'){
 							'review_text'=>$_POST['message']
 				));
 
-				echo 'Thank you for your review!';
+				$alert_class = 'alert-success';
+				$alert_message = 'Thank you for your review! It will now be posted once approved by our team.';
 			} catch (Exception $e) {
-				echo $e;
-				echo 'test';
+				// echo $e;
+				$alert_class = 'alert-danger';
+				$alert_message = 'Oops, something went wrong on our end. Please try submitting again in a little while.';
 			}	
+
+			?>
+
+			<div class="alert <?=$alert_class?>" role="alert" style="text-align: center;"> 
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<?=$alert_message?>
+			</div>
+<?php
 
 }
 

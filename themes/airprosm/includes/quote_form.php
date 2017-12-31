@@ -15,7 +15,7 @@ if (!empty($_POST) && $_POST['action'] == 'quote'){
 
 				// notify admin via email
 				$to = get_option( 'admin_email' );
-				$subject = 'Air Pros Mechanical career application';
+				$subject = 'Air Pros Mechanical quote application';
 				$message = "Hi admin, \r\n \r\n" 
 							. "A client has requested a quote with the following details:\r\n \r\n"
 							. "Name: "	.$_POST['contact_name']." \r\n"
@@ -27,9 +27,10 @@ if (!empty($_POST) && $_POST['action'] == 'quote'){
 				
 				wp_mail( $to, $subject, $message );
 
-				echo 'Quote Successfully Submitted!';
+				echo "<script>alert('Quote Successfully Submitted! We will get in touch with you soon.');</script>";
 			} catch (Exception $e) {
-				echo $e;
+				// echo $e;
+				echo "<script>alert('Oops, something went wrong on our end. Please try submitting again in a little while.');</script>";
 			}	
 
 }
