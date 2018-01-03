@@ -37,7 +37,7 @@
                     <h4>We are..</h4>
                     <h1>Air Pros Mechanical</h1>
 
-                    <p>Since 2013, Air Pros Mechanical, Inc. has been installing and repairing heating and air conditioning systems in Chicagoland and surrounding suburbs. We are an authorized Bryant dealer with a team of highly-trained, licensed sales engineers and field technicians. Integrity is our foremost value and we assure transparency when it comes to telling customers how much it would cost to complete the job perfectly. This is why we are one of the most trusted HVAC companies in our service area.
+                    <p>Since 2013, Air Pros Mechanical, Inc. has been installing and repairing heating and air conditioning systems in Chicagoland and surrounding suburbs. We are a Bryant dealer with a team of highly-trained, licensed sales engineers and field technicians. Integrity is our foremost value and we assure transparency when it comes to telling customers how much it would cost to complete the job perfectly. This is why we are one of the most trusted HVAC companies in our service area.
 
 Call us today and let’s talk about how we can help you with your HVAC needs.
 </p>
@@ -82,7 +82,7 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 	    <div style="padding-top: 15px; padding-bottom: 15px;">
 
 	    <div class="clearfix"> 
-			<p class="col-md-8 col-md-offset-2 col-xs-12" style="color:white; font-size: 18px;">As an authorized Bryant dealer, we provide top-of-the line equipment to our customers. Our sales engineers and field technicians are certified experts with hundreds of successful projects under their hands.  You can rely on us to get best-in-class service that is tailor-fit to your preferences and budget.
+			<p class="col-md-8 col-md-offset-2 col-xs-12" style="color:white; font-size: 18px;">As a Bryant dealer, we provide top-of-the line equipment to our customers. Our sales engineers and field technicians are certified experts with hundreds of successful projects under their hands.  You can rely on us to get best-in-class service that is tailor-fit to your preferences and budget.
 
 			Call us now and we’ll gladly assist you with any heating and air conditioning needs.
 			</p>
