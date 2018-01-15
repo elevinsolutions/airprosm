@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no">
-
+    <title>Air Pros Mechanical</title>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -741,6 +741,8 @@
                 </li>
                 <li id="sub-5"><a href="<?php echo get_bloginfo('wpurl'); ?>#careers" onclick="scrollToPage('careers');return false;">Careers</a>
                 </li>
+                <li id="callTel"><a href="tel:1-630-779-5555" style="font-family: SANS-SERIF;
+                    font-weight: 800;">1-630-779-3805</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <button type="button" data-toggle="modal" data-target="#quoteModal" class="btn btn-warning">Get a Quote</button>

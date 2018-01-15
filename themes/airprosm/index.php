@@ -182,6 +182,9 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 	<div class="container" style="padding-top: 100px;padding-bottom: 100px;">
 			
 			<div class="col-xs-12 col-sm-5">
+
+				<img src="<?php echo get_template_directory_uri(); ?>/images/AirProVan.jpg" style="width:100%; border-radius: 5px;border: solid 1px #bdbdbd;padding: 3px;">
+				
 				<h1>Be part of our team!</h1>
 
 				<p>We are looking for skilled, reliable, and customer-focused technicians. Send us your resume and be part of our growing team.</p>
