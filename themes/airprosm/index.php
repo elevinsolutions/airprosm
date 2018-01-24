@@ -1,6 +1,90 @@
 <?php session_start(); get_header(); ?>
 
 <section class="hero">
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+         <div class="heroImage">
+            <div class="heroInsideContent" style="text-align:center;">
+            	<div class="container">
+	                <h2>Stay Comfortable At Home All Year Round</h2>
+	                <h4>Air Pros Mechanical has the solution for every heating and air conditioning needs.</h4>
+	                <div style="margin-bottom:50px"></div>
+
+	                <?php include 'includes/subscribe_form.php'; ?>
+	                
+	                <div class="row">
+	                    <div class="heroBox col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top: 10px; padding-top:50px; padding-bottom:50px; background-color: #790202ab;">
+
+						<form method="post" enctype="multipart/form-data" id="subscribe_form" style="color: black;"> 
+							<input type="hidden" name="action" value="subscribe">
+
+	                        <input class="col-xs-5 col-xs-offset-1 col-md-offset-2 col-md-4" type="email" name="email" placeholder="Email Address" required />
+	                        <input class="col-xs-5 col-md-4" style="margin-left:10px;" type="text" name="phone" placeholder="Phone Number" required />
+
+	                        <br />
+	                        <input type="submit" class="btn-hero btn-lg btn-primary" style="margin-top:20px;">
+	                    </form>
+	                    </div> <!-- heroBox -->
+	                </div>
+            	</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="item">
+         <div class="heroImage2">
+            <div class="heroInsideContent" style="text-align:center;">
+            	<div class="container">
+	                <h2 style="font-size:45px;">Heat up!</h2>
+	                <h4 style="font-size:23px;">Winter is here and Air Pros Mechanical has the products for your heating needs!</h4>
+	                <div style="margin-bottom:50px"></div>
+
+	                <?php include 'includes/subscribe_form.php'; ?>
+	                
+	                <div class="row">
+	                    <div class="heroBox col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top: 10px; padding-top:50px; padding-bottom:50px; background-color: #790202ab;">
+
+						<form method="post" enctype="multipart/form-data" id="subscribe_form" style="color: black;"> 
+							<input type="hidden" name="action" value="subscribe">
+
+	                        <input class="col-xs-5 col-xs-offset-1 col-md-offset-2 col-md-4" type="email" name="email" placeholder="Email Address" required />
+	                        <input class="col-xs-5 col-md-4" style="margin-left:10px;" type="text" name="phone" placeholder="Phone Number" required />
+
+	                        <br />
+	                        <input type="submit" class="btn-hero btn-lg btn-primary" style="margin-top:20px;">
+	                    </form>
+	                    </div> <!-- heroBox -->
+	                </div>
+            	</div>
+            </div>
+        </div>
+      </div>
+    
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+       <!--
         <div class="heroImage">
             <div class="heroInsideContent" style="text-align:center;">
             	<div class="container">
@@ -22,11 +106,13 @@
 	                        <br />
 	                        <input type="submit" class="btn-hero btn-lg btn-primary" style="margin-top:20px;">
 	                    </form>
-	                    </div> <!-- heroBox -->
+	                    </div> <heroBox 
 	                </div>
             	</div>
             </div>
         </div>
+
+         -->
 </section>
 
 <section id="weAre" class="weAre">
@@ -93,6 +179,100 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
     </div>
 </section>
 
+
+<section class="ourWork" style="padding-top:50px; padding-bottom: 50px; background-color:#f5f5f585">
+  <div class="container">
+
+    <div class="row text-center">
+       <h2 style="font-size: 35px;
+    margin-bottom: 50px; color: #ab1e1e;">Our Work</h2>
+    </div>
+
+    <div class="row">
+
+		<div class="col-md-3">
+			<div class="panel panel-default panel-front">		
+			
+				<div class="panel-heading">
+				
+					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork1.JPG"></a></h4>
+					
+				</div>
+				
+				<div class="panel-body">
+				
+					<h4>Lorem Ipsum</h4>
+				
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur. 
+				  
+					
+				</div>
+			</div>	
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-default panel-front">		
+			
+				<div class="panel-heading">
+				
+					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork2.JPG"></a></h4>
+					
+				</div>
+				
+				<div class="panel-body">
+				
+					<h4>Lorem Ipsum</h4>
+				
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur.
+				  
+
+					
+				</div>
+			</div>	
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-default panel-front">		
+			
+				<div class="panel-heading">
+				
+					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork3.JPG"></a></h4>
+					
+				</div>
+				
+				<div class="panel-body">
+				
+					<h4>Lorem Ipsum</h4>
+				
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur.
+				  
+
+				</div>
+			</div>	
+        </div>
+		<div class="col-md-3">
+			<div class="panel panel-default panel-front">		
+			
+				<div class="panel-heading">
+				
+					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork4.JPG"></a></h4>
+					
+				</div>
+				
+				<div class="panel-body">
+				
+					<h4>Lorem Ipsum</h4>
+				
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur.
+				  
+					
+				</div>
+			</div>	
+        </div>
+    </div>
+  </div>
+     
+
+  </div>
+</section>
 
 <section id="services" class="services">
 
@@ -263,7 +443,7 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 
 	function scrollToPage(section){
       $('html, body').animate({
-            scrollTop: $("#"+section).offset().top
+            scrollTop: $("#"+section).offset().top -120
         }, 1000);
     }
 

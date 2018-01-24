@@ -19,14 +19,12 @@
 		                	<!-- if parent categories have post, go to them once clicked -->
 		                	<? if ($category->count > 0): ?>
 		                  		<a href="<?=get_category_link( $category->term_id )?>" style="display:block;">
-		                  			<span class="glyphicon glyphicon-file"> </span>
 				                  	<?=$category->name?> 
 				                </a>
 
 				            <!-- other wise, open the child categories panel -->
 		                  	<? else: ?>
 		                  		<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?=$category->slug;?>" style="display:block;">
-			                  		<span class="glyphicon glyphicon-file"> </span>
 				                  	<?=$category->name?> 
 				                </a>
 		                  	<? endif; ?>

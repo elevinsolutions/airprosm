@@ -14,6 +14,12 @@
    <p color="white" style="font-size: 16px;"><strong>Boilers - Air Conditioners - Heaters - Furnaces - Heat Pumps - Air Filtration - System Controls</strong></p>
    <br>
    <br>
+
+
+   <div class="col-xs-12">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11883.500330585011!2d-88.18193!3d41.874034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ac257850fbb7ac7!2sAir+Pros+Mechanical!5e0!3m2!1sen!2sph!4v1516262368039" width="100%" height="315" frameborder="0" style="border:0" allowfullscreen></iframe>    
+  </div>
+
    <p color="white" style="font-size: 14px; margin-top:20px;">Servicing West Chicago, IL and nearby communities since 2013, Air Pros Mechanical, Inc. is one of the most reputable HVAC companies in the area. Comprised of a team of certified HVAC professionals with more than 10 years of experience, Air Pros Mechanical provides a full spectrum of HVAC repair, maintenance, and installation services. In every project – whether residential or commercial, Air Pros Mechanical is committed to delivering top of the line products and excellent service.</p>
 
 
@@ -33,7 +39,7 @@
 <div class="row">
 <center>
 <i style="color:red;" class="fa fa-phone" aria-hidden="true"></i>&nbsp; 630-779-3805 &nbsp;&nbsp;&nbsp;
-<i style="color:red;" class="fa fa fa-map-marker" aria-hidden="true"></i>&nbsp; Chicago, IL &nbsp;&nbsp;&nbsp;
+<i style="color:red;" class="fa fa fa-map-marker" aria-hidden="true"></i>&nbsp; West Chicago, IL &nbsp;&nbsp;&nbsp;
 <i style="color:red;" class="fa fa fa-envelope" aria-hidden="true"></i>&nbsp; airprosmechanicalinc@gmail.com &nbsp;&nbsp;&nbsp;
 </center>
 </div>

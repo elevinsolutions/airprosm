@@ -29,18 +29,23 @@
             font-family: 'Catamaran', sans-serif;
         }
         .navbar-inverse {
-            background-color: #E44424;
+            background-color: #a52424f2;
             border-color: transparent;
         }
         .navbar-inverse .navbar-nav>li>a {
             color: #ececec;
+            font-size: 15px;
+            margin-left: 20PX;
+            font-weight: 800;
         }
         .navbar-brand {
+            margin-top: 25px;
             background-image: url(AirProsLogo.png);
             background-repeat: no-repeat;
             width: 200px;
             padding-bottom: 50px;
-            margin-left: 20px;
+            margin-left: 40px !important;
+            background-size: 170px 50px;
         }
         .navbar-form .btn-warning {
             background-color: #ffffff;
@@ -61,15 +66,9 @@
             color: #ffffff;
         }
         .navbar-margin {
-            margin-top: 10px;
+            margin-top: 5px;
         }
-        .heroImage {
-            background-image: url(HeroImage.png);
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 880px;
-            background-size: cover;
-        }
+
         body {
             /*background-color: #eee;*/
         }
@@ -93,7 +92,8 @@
             border-color: #848484;
         }
         .btn-danger:hover {
-            background-color: #b02f15
+            background-color: #484848;
+            border-color:#484848;
         }
         .list-group-item.active,
         .list-group-item.active:focus,
@@ -181,12 +181,19 @@
 
     <!-- JOVIN -->
     <style>
+        
+        @media (min-width: 768px)
+        {
+            .navbar-header {
+                float: none;
+            }
+        }
 
         p {
             font-size: 17px;
         }
         .navbar-inverse {
-            background-color: #a52424e8;
+            background-color: #c72e2ef2;
             border-color: transparent;
         }
         .navbar-inverse .navbar-nav>li>a {
@@ -202,24 +209,41 @@
         .navbar-margin {
             margin-top: 10px;
         }
-        .hero {
-            padding-top: 50px;
+
+        .navbar-details {
+            float:right;
         }
+        
+        .hero {
+
+        }
+
         .hero h2 {
             font-size: 42px;
         }
         .heroImage {
             background-image: url(<?php echo get_template_directory_uri(); ?>/images/HeroImage.png);
             background-repeat: no-repeat;
+            margin-top:120px;
             width: 100%;
-            height: 780px;
+            height: 620px;
+            background-size: cover;
+            box-shadow:inset 0 0 0 2000px rgba(68, 68, 68, 0.22);
+        }
+
+         .heroImage2 {
+            background-image: url(<?php echo get_template_directory_uri(); ?>/images/slideshow2.jpeg);
+            background-repeat: no-repeat;
+            margin-top:120px;
+            width: 100%;
+            height: 620px;
             background-size: cover;
             box-shadow:inset 0 0 0 2000px rgba(68, 68, 68, 0.22);
         }
         .heroInsideContent {
             color: white;
             text-shadow: 0px 0px 10px rgb(85, 85, 85);
-            padding-top: 350px;
+            padding-top: 250px;
         }
         .hero input {
             height: 40px;
@@ -356,13 +380,44 @@
             background-color: #ffffff;
             border-color: #848484;
         }
+        .pageProduct #sidebar {
+            margin-top:60px;
+        }
 
         #sidebar {
-            margin-top: 60px;
+            margin-top: 170px;
         }
 
         #content {
             margin-top: 60px;
+            padding-bottom: 170px;
+        }
+
+        .ourWork img {
+            width: 100%;
+            height: 380px;
+        }
+
+        .ourWork .panel-heading {
+            padding:0;
+        }
+
+        .productsPage img {
+            width: 100%;
+            height: 210px;
+        }
+
+        .productsPage .panel-heading {
+            padding: 0;
+        }
+
+        .productsPage .panel-body {
+            padding: 8px;
+            color: #616161;
+        }
+
+        .btn-ground {
+            margin-top: 50px;
         }
     </style>
 
@@ -581,6 +636,16 @@
                 background-color: #dc4848;
                 border-color: transparent;
             }
+            
+            .navbar-details {
+                 background-color: #dc4848;
+                 float:initial;
+                 padding-top:0px !important;
+            }
+
+            .navbar-navlinks {
+                margin-top:0px !important;
+            }
 
             .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
                 box-shadow: inset 0 0 0 2000px rgba(21, 1, 1, 0.18);
@@ -663,6 +728,33 @@
                 width: 98%;
                 padding: 5px;
             }
+
+            .navbar-brand {
+                margin-top: 15px;
+                background-size: 125px 40px;
+                padding-bottom: 10px;
+            }
+
+
+            .navbar-details{
+                clear:both;
+            }
+
+            .navbar-details .telnumber{
+                font-size:22px !important;
+            }
+            .btn-getaquote {
+                width: 140px;
+            }
+
+            .navbutton {
+                font-size:14px !important;
+            }
+
+            .navbar-form {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
         }
         @media (min-width: 481px) and (max-width: 767px) {
             .testimonial4_control_button .carousel-control.left {
@@ -720,41 +812,69 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?php echo get_site_url(); ?>"></a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right main-nav" id="navbar">
-            <ul class="nav navbar-nav navbar-margin">
-                <li id="sub-1"><a href="<?php echo get_bloginfo('wpurl'); ?>#weAre" onclick="scrollToPage('weAre');return false;">Who we are</a>
-                </li>
-                <li id="sub-2"><a href="<?php echo get_bloginfo('wpurl'); ?>/product">Products</a>
-                </li>
-                <li id="sub-3"><a href="<?php echo get_bloginfo('wpurl'); ?>#services" onclick="scrollToPage('services');return false;">Services</a>
-                </li>
-                <li id="sub-4"><a href="<?php echo get_bloginfo('wpurl'); ?>#testimonials" onclick="scrollToPage('testimonials');return false;">Reviews</a>
-                </li>
-                <li id="sub-5"><a href="<?php echo get_bloginfo('wpurl'); ?>#careers" onclick="scrollToPage('careers');return false;">Careers</a>
-                </li>
-                <li id="callTel"><a href="tel:1-630-779-5555" style="font-family: SANS-SERIF;
-                    font-weight: 800;">1-630-779-3805</a></li>
-            </ul>
-            <form class="navbar-form navbar-right">
-                <button type="button" data-toggle="modal" data-target="#quoteModal" class="btn btn-warning">Get a Quote</button>
+        <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="<?php echo get_site_url(); ?>"></a>
 
-            </form>
-            <div class="bottom-arrow"></div>
+                 <div class="navbar-details" style="text-align: center;
+                        padding-top: 20px;">
+                  <a class="telnumber" href="tel:1-630-779-5555" style="font-family: Arial;
+                        font-weight: 800; color: white;
+                        font-size: 32px;">
+                    1-630-779-3805</a>
+                  <h1 style="font-size: 1.1em;
+                        margin-top: 0;
+                        font-family: arial; color:white;">
+                    24 Hour Emergency Service Available</h1>
+                  <a class="navbutton btn" href="https://microf.com/customers/" class="btn" style="color: #944848;
+                        background-color: #ffffff;
+                        /* border-color: #eea236; */
+                        font-size: 17px;">
+                    Financing Available</a>
+                  <form class="navbar-form navbar-right " style="margin: 0;">
+                    <button type="button" data-toggle="modal" data-target="#quoteModal" class="btn btn-warning btn-getaquote " style="    margin-top: 0;
+                        color: #944848;
+                        background-color: #ffffff;
+                        font-size: 18px;">
+                    Get a Quote</button>
+
+                  </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row navbar-navlinks" style="margin-top: -50px;">
+
+
+            
+            <div class="navbar-collapse collapse navbar-right main-nav" id="navbar" style="float: left !important;">
+                <ul class="nav navbar-nav navbar-margin">
+                    <li id="sub-1"><a href="<?php echo get_bloginfo('wpurl'); ?>#weAre" onclick="scrollToPage('weAre');return false;">HOME</a>
+                    </li>
+                    <li id="sub-2"><a href="<?php echo get_bloginfo('wpurl'); ?>/product">PRODUCTS</a>
+                    </li>
+                    <li id="sub-3"><a href="<?php echo get_bloginfo('wpurl'); ?>#services" onclick="scrollToPage('services');return false;">SERVICES</a>
+                    </li>
+                    <li id="sub-4"><a href="<?php echo get_bloginfo('wpurl'); ?>#testimonials" onclick="scrollToPage('testimonials');return false;">REVIEWS</a>
+                    </li>
+                    <li id="sub-5"><a href="<?php echo get_bloginfo('wpurl'); ?>#careers" onclick="scrollToPage('careers');return false;">CAREERS</a>
+                    </li>
+                </ul>
+                <div class="bottom-arrow"></div>
+            </div>
         </div>
         <!--/.navbar-collapse -->
     </div>
 </nav>
 
-<!-- line modal -->
+.<!-- line modal -->
 <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
