@@ -1,12 +1,20 @@
 <?php session_start(); get_header(); ?>
 
 <br>
-<div class="pageProduct" style="margin-top:160px">
+<div class="pageProduct" style="margin-top:120px">
 	<?php get_sidebar(); ?>
 
-	<section id="content" role="main" class="col-sm-12 col-md-9 col-lg-9 productsPage" style="padding-bottom:200px;">
-    
-        <div class="col-md-3">
+	<section id="content" role="main" class="col-sm-12 col-md-9 col-lg-9 productsPage" style="padding-bottom:160px;">
+        <div class="row" style="padding-bottom: 10px;">
+          <div class="col-md-12">
+            <h2 style=" border-bottom: 1px solid #dbdbdb;
+					    font-weight: bold;
+					    font-size: 34px;
+					    padding-bottom: 10px;
+					    color: #404040;">Products</h2>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -23,7 +31,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -39,7 +47,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -55,7 +63,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -71,7 +79,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -88,7 +96,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -104,7 +112,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -120,7 +128,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -136,7 +144,7 @@
 				</div>
 			</div>	
         </div>
-                <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">
@@ -152,7 +160,7 @@
 				</div>
 			</div>	
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-sm-6 col-xs-12">
 			<div class="panel panel-default panel-front">		
 			
 				<div class="panel-heading">

@@ -1,4 +1,4 @@
-<aside id="sidebar" role="complementary" class="col-sm-12 col-md-3 col-lg-3">
+<aside id="sidebar" role="complementary" class="col-sm-12 col-md-2 col-lg-2">
     <?php if ( is_active_sidebar( 'primary-widget-area' ) ) : ?>
     <div id="primary" class="widget-area">
         <ul class="xoxo">

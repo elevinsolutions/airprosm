@@ -16,6 +16,7 @@
 
     <!-- CUSTOM GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -39,13 +40,13 @@
             font-weight: 800;
         }
         .navbar-brand {
-            margin-top: 25px;
+            margin-top: 15px;
             background-image: url(AirProsLogo.png);
             background-repeat: no-repeat;
             width: 200px;
             padding-bottom: 50px;
             margin-left: 40px !important;
-            background-size: 170px 50px;
+            background-size: 160px 50px;
         }
         .navbar-form .btn-warning {
             background-color: #ffffff;
@@ -91,10 +92,11 @@
             background-color: #3e3d3d;
             border-color: #848484;
         }
-        .btn-danger:hover {
-            background-color: #484848;
-            border-color:#484848;
+        .btn-danger:hover, .btn-danger:active, .btn-danger:visited, .btn-danger:focus {
+            background-color: #484848 !important;
+            border-color:#484848 !important;
         }
+
         .list-group-item.active,
         .list-group-item.active:focus,
         .list-group-item.active:hover,
@@ -207,7 +209,7 @@
         }
 
         .navbar-margin {
-            margin-top: 10px;
+            margin-top: 7px;
         }
 
         .navbar-details {
@@ -217,14 +219,25 @@
         .hero {
 
         }
+        
 
-        .hero h2 {
-            font-size: 42px;
+        #heroCarousel .carousel-control.left {
+            background-image:none;
+        }
+
+        #heroCarousel .carousel-control.right {
+            background-image:none;
+        }
+
+        .heroMainTitle h2 {
+            font-size: 3.5em;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-shadow: -5px -1px 10px rgb(85, 85, 85);
         }
         .heroImage {
             background-image: url(<?php echo get_template_directory_uri(); ?>/images/HeroImage.png);
             background-repeat: no-repeat;
-            margin-top:120px;
+            margin-top: 90px;
             width: 100%;
             height: 620px;
             background-size: cover;
@@ -234,17 +247,30 @@
          .heroImage2 {
             background-image: url(<?php echo get_template_directory_uri(); ?>/images/slideshow2.jpeg);
             background-repeat: no-repeat;
-            margin-top:120px;
+            margin-top: 90px;
             width: 100%;
             height: 620px;
             background-size: cover;
             box-shadow:inset 0 0 0 2000px rgba(68, 68, 68, 0.22);
         }
+
+        .heroBox {
+            margin-top: 10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #790202ab;
+        }
+
         .heroInsideContent {
             color: white;
             text-shadow: 0px 0px 10px rgb(85, 85, 85);
-            padding-top: 250px;
+            padding-top: 220px;
         }
+
+        .heroMainTitle {
+            height: 80px;
+        }
+
         .hero input {
             height: 40px;
         }
@@ -380,18 +406,37 @@
             background-color: #ffffff;
             border-color: #848484;
         }
-        .pageProduct #sidebar {
-            margin-top:60px;
-        }
+
+        /** SideBar **/
 
         #sidebar {
-            margin-top: 170px;
+            margin-top: 95px;
         }
 
+        #sidebar .panel-group {
+            background-color:#f5f5f5;
+            border: 1px solid #cccccc;
+            border-bottom: none;
+            border-radius: 2px;
+        }
+
+        #sidebar .panel-default>.panel-heading {
+            border-bottom: 1px solid #cccccc;
+        }
+
+        #sidebar .panel-default {
+            border:none;
+
+        }
+
+        /** End SideBar **/
+ 
         #content {
-            margin-top: 60px;
+            margin-top: 10px;
             padding-bottom: 170px;
         }
+        
+        /** Our Work **/
 
         .ourWork img {
             width: 100%;
@@ -401,6 +446,50 @@
         .ourWork .panel-heading {
             padding:0;
         }
+        
+        .ourWork .panel-body {
+            height:320px;
+        }
+
+        .ourWork .panel-work-title{
+            height:60px;
+        }
+
+        .ourWork h4 {
+            font-size:21px;
+            font-weight: 800;
+            color: #383838;
+        }
+
+        .ourWork p {
+            font-size:15px;
+        }
+
+        .ourWork .glyphicon {
+             -webkit-transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
+            transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
+            color: #af2929;
+        }
+
+        .ourWork .carousel-control.left {
+            background-image:none;
+        }
+
+        .ourWork .carousel-control.right {
+            background-image:none;
+        }
+
+
+        .ourWork .carousel-control:focus, .carousel-control:hover {
+            color: #fb2e2e;
+            text-decoration: none;
+            filter: alpha(opacity=90);
+            outline: 0;
+            opacity: .9;
+        }
+
+        /** End of Our Work **/
+
 
         .productsPage img {
             width: 100%;
@@ -418,6 +507,17 @@
 
         .btn-ground {
             margin-top: 50px;
+        }
+
+        /** footer style **/
+
+        .footerContainer h4{
+             font-size: 16px;
+             text-align: left;
+        }
+
+        .footerContainer a {
+            color:white;
         }
     </style>
 
@@ -630,6 +730,11 @@
             color: #a52424;
            }
         
+        @media(max-width: 1534px) {
+            .productsPage img {
+                height:160px;
+            }
+        }
         @media(max-width: 550px) {
             
             .navbar-inverse {
@@ -645,6 +750,7 @@
 
             .navbar-navlinks {
                 margin-top:0px !important;
+                border-top: 1px solid #ff585e;
             }
 
             .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
@@ -673,7 +779,7 @@
             }
 
             .heroInsideContent {
-                padding-top:150px;
+                padding-top:220px;
             }
 
             .hero .btn-hero {
@@ -703,8 +809,13 @@
                 margin-top: -20px;
              }
 
+             #sidebar {
+                margin-top: 215px;
+             }
 
-
+            .productsPage img {
+                height: 190px;
+            }
              input {
                 border-color: white;
                 -webkit-border-radius: 3px;
@@ -712,6 +823,8 @@
                 border: 1px solid #b9b9b9;
 
                 }
+
+
              }
 
         @media only screen and (max-width: 480px) {
@@ -755,6 +868,21 @@
                 -webkit-box-shadow: none;
                 box-shadow: none;
             }
+
+            .heroBox {
+                display:none;
+            }
+
+            .errorPage {
+                margin-top: 120px;
+            }
+
+            .navbar-collapse {
+                -webkit-box-shadow: none;
+                box-shadow:none;
+            }
+
+
         }
         @media (min-width: 481px) and (max-width: 767px) {
             .testimonial4_control_button .carousel-control.left {
@@ -824,12 +952,12 @@
                 <a class="navbar-brand" href="<?php echo get_site_url(); ?>"></a>
 
                  <div class="navbar-details" style="text-align: center;
-                        padding-top: 20px;">
+                        padding-top: 10px;">
                   <a class="telnumber" href="tel:1-630-779-5555" style="font-family: Arial;
                         font-weight: 800; color: white;
-                        font-size: 32px;">
+                        font-size: 24px;">
                     1-630-779-3805</a>
-                  <h1 style="font-size: 1.1em;
+                  <h1 style="font-size: 0.9em;
                         margin-top: 0;
                         font-family: arial; color:white;">
                     24 Hour Emergency Service Available</h1>

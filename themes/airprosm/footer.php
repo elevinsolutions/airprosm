@@ -9,12 +9,122 @@
 
 
 <div class="row" style="padding-bottom:20px;">
- <center>
- 	<h3 style="font-size:27px;"><a href="<?php echo get_bloginfo('wpurl'); ?>/product" class="our_products_link" style="color: white;">Our Products</a></h3>
-   <p color="white" style="font-size: 16px;"><strong>Boilers - Air Conditioners - Heaters - Furnaces - Heat Pumps - Air Filtration - System Controls</strong></p>
-   <br>
-   <br>
+	<div class="col-md-12">
+       <div class="col-md-4" style="
+				    text-align: center;
+				    margin-bottom: 40px;
+				">
+         <h3 style="
+				    text-align: center;
+				    font-family: 'Roboto Condensed', sans-serif;
+				    font-size:27px;
+				">Products</h3>
 
+	     <div class="row">
+		         <div class="col-md-offset-2 col-md-4">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/boilers/">Boilers</a></h4>
+
+		         </div>
+		         <div class="col-md-offset-1 col-md-5">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/air-conditioning/">Air Conditioners</a></h4>
+		         </div>
+          </div>
+
+         <div class="row">
+		         <div class="col-md-offset-2 col-md-4">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/commercial-rooftop-units/">Rooftop Units</a></h4>
+		         </div>
+		         <div class="col-md-offset-1 col-md-5">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/controls-accessories/">Controls & Accessories</a></h4>
+		         </div>
+         </div>
+
+	     <div class="row">
+		         <div class="col-md-offset-2 col-md-4">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/ductless-systems/">Ductless Systems</a></h4>
+		         </div>
+		         <div class="col-md-offset-1 col-md-5">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/furnaces/">Furnaces</a></h4>
+		         </div>
+	     </div>
+         <div class="row">
+		         <div class="col-md-offset-2 col-md-4">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/iaq/">IAQ</a></h4>
+		         </div>
+		         <div class="col-md-offset-1 col-md-5">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/indoor-units/">Indoor Units</a></h4>
+		         </div>
+         </div>
+         <div class="row">
+		         <div class="col-md-offset-2 col-md-4">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/outdoor-units/">Outdoor Units</a></h4>
+		         </div>
+		         <div class="col-md-offset-1 col-md-5">
+		          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>/category/residential-controls/">Residential Controls</a></h4>
+		         </div>
+         </div>
+
+
+       </div>
+       <div class="col-md-4" style="
+			    text-align: center;
+			    margin-bottom: 40px;
+			">
+         <h3 style="
+			    text-align: center;
+			    font-family: 'Roboto Condensed', sans-serif;
+			    font-size:27px;
+			">About Us</h3>
+         <div class="col-md-offset-1 col-md-3">
+          <h4><a href="<?php echo get_site_url(); ?>">Home</a></h4>
+         </div>
+         <div class="col-md-offset-1 col-md-3">
+          <h4><a href="<?php echo get_site_url(); ?>">Work</a></h4>
+         </div>
+         <div class="col-md-4">
+          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>#services" onclick="scrollToPage('services');return false;">Services</a></h4>
+         </div>
+         <div class="col-md-offset-1 col-md-3">
+          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>#testimonials" onclick="scrollToPage('testimonials');return false;">Reviews</a></h4>
+         </div>
+         <div class="col-md-offset-1 col-md-3">
+          <h4><a href="<?php echo get_bloginfo('wpurl'); ?>#careers" onclick="scrollToPage('careers');return false;">Careers</a></h4>
+         </div>
+
+       </div>
+
+       <div class="col-md-3" style="
+			    text-align: center;
+			    margin-bottom: 40px;
+			">
+         <h3 style="
+			    text-align: center;
+			    font-family: 'Roboto Condensed', sans-serif;
+			    font-size:27px;
+			">Contact Us</h3>
+         <div class="col-md-12">
+          <h4>airprosmechanicalinc@gmail.com</h4>
+         </div>
+         <div class="col-md-12">
+          <h4>West Chicago, IL</h4>
+         </div>
+         <div class="col-md-12">
+          <h4>1-630-779-5555</h4>
+         </div>
+         <div class="col-md-12" style="text-align:left; margin-top:20px;">
+			<a href="https://www.facebook.com/Airprosmechanicalinc/">
+			<i style="color:#4261ab;" class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+			<a href="https://www.yelp.com/biz/air-pros-mechanical-west-chicago">
+			<i style="color:#d42b2b; margin-left:10px;" class="fa fa-yelp fa-3x" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/air-pros-mechanical-5288b794">
+			<i style="color:#28a3d4; margin-left:10px;" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+         </div>
+
+       </div>
+	</div>
+ <center>
+ 	
+   <br>
 
    <div class="col-xs-12">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11883.500330585011!2d-88.18193!3d41.874034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ac257850fbb7ac7!2sAir+Pros+Mechanical!5e0!3m2!1sen!2sph!4v1516262368039" width="100%" height="315" frameborder="0" style="border:0" allowfullscreen></iframe>    
@@ -25,16 +135,7 @@
 
  </center>
 </div>
-<div class="row" style="
-    padding-bottom: 20px;
-"> 
-<center>	
-<a href="#">
-<i style="color:#4261ab;" class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-<a href="#">
-<i style="color:#1e96d2; margin-left:10px;" class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
-</center>
-</div>
+
 
 <div class="row">
 <center>
@@ -47,7 +148,7 @@
 <hr>
 
 <div class="row">
-<center><h4 style="font-size:14px; color:white;">@ 2017 Air Pro's Mechanical Inc. All rights reserved.</h4></center>
+<center><h5 style="font-size:14px; color:white;">@ 2017 Air Pro's Mechanical Inc. All rights reserved.</h4></center>
 </div>
 </div>
 </footer>

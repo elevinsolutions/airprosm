@@ -3,11 +3,11 @@
 <section class="hero">
 
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="heroCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#heroCarousel" data-slide-to="1"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -16,14 +16,16 @@
          <div class="heroImage">
             <div class="heroInsideContent" style="text-align:center;">
             	<div class="container">
-	                <h2>Stay Comfortable At Home All Year Round</h2>
-	                <h4>Air Pros Mechanical has the solution for every heating and air conditioning needs.</h4>
+            		<div class="heroMainTitle">
+		                <h2>Stay Comfortable At Home All Year Round</h2>
+		                <h4 style="font-size:21px;">Air Pros Mechanical has the solution for every heating and air conditioning needs.</h4>
+	                </div>
 	                <div style="margin-bottom:50px"></div>
 
 	                <?php include 'includes/subscribe_form.php'; ?>
 	                
 	                <div class="row">
-	                    <div class="heroBox col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top: 10px; padding-top:50px; padding-bottom:50px; background-color: #790202ab;">
+	                    <div class="heroBox col-sm-6 col-sm-offset-3 col-xs-12">
 
 						<form method="post" enctype="multipart/form-data" id="subscribe_form" style="color: black;"> 
 							<input type="hidden" name="action" value="subscribe">
@@ -45,8 +47,10 @@
          <div class="heroImage2">
             <div class="heroInsideContent" style="text-align:center;">
             	<div class="container">
-	                <h2 style="font-size:45px;">Heat up!</h2>
-	                <h4 style="font-size:23px;">Winter is here and Air Pros Mechanical has the products for your heating needs!</h4>
+            		<div class="heroMainTitle">
+		                <h2 style="font-size:45px; font-family: 'Roboto Condensed', sans-serif;">Heat up!</h2>
+		                <h4 style="font-size:23px; font-family: 'Roboto Condensed', sans-serif; text-shadow:-9px 2px 10px rgb(85, 85, 85);">Winter is here and Air Pros Mechanical has the products for your heating needs!</h4>
+	                </div>
 	                <div style="margin-bottom:50px"></div>
 
 	                <?php include 'includes/subscribe_form.php'; ?>
@@ -74,11 +78,11 @@
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <a class="left carousel-control" href="#heroCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <a class="right carousel-control" href="#heroCarousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -179,6 +183,306 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
     </div>
 </section>
 
+<!--
+<section class="ourWork" style="padding-top:50px; padding-bottom: 50px; background-color:#f5f5f585">
+	   <div class="container">
+			<div class="row text-center">
+				       <h2 style="font-size: 35px;
+				    margin-bottom: 50px; color: #ab1e1e;">Our Work</h2>
+			</div>
+	   </div>
+
+  <div id="ourWorkCarousel" class="carousel slide" data-ride="carousel">
+    
+    <ol class="carousel-indicators">
+      <li data-target="#ourWorkCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#ourWorkCarousel" data-slide-to="1"></li>
+      <li data-target="#ourWorkCarousel" data-slide-to="2"></li>
+    </ol>
+
+    
+    <div class="carousel-inner">
+      <div class="item active">
+           <div class="container">
+
+			    <div class="row">
+
+					<div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork1.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Your Home, Your Refuge</h4>
+							    </div>
+								<p class="panel_text">Relax and enjoy your winter refuge with exceptional comfort and savings. The variable-speed Model 926T delivers evenly controlled airflow and a significant reduction in temperature swings . As the focal point for year-round comfort, this furnace offers enhanced summer humidity control capabilities as well.</p>
+							  
+								
+							</div>
+						</div>	
+			        </div>
+			        <div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork2.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Atmospheric Vent Gas Models</h4>
+							    </div>
+								<p class="panel_text">Bradford White's Defender System Atmospheric Vent water heaters utilize a draft diverter and are atmospherically vented with capacities ranging from 30 to 50 gallons and inputs ranging from 30,000-50,000 BTU/Hr. Defender Atmospheric Vent models are perfect for many standard water heating applications</p>
+							  
+
+								
+							</div>
+						</div>	
+			        </div>
+			        <div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork3.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Quiet Comfort, and Cool Savings</h4>
+							    </div>
+								<p class="panel_text">Enjoy cool, summer comfort and energy savings of up to 16 SEER with our single-stage Preferred central air conditioner. This model can help cut your utility bills while you relax with reliable whole-home comfort that's as quiet as running your dishwasher.</p>
+							  
+
+							</div>
+						</div>	
+			        </div>
+					<div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork4.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Work-Horse Reliability at a Reasonable Price</h4>
+							    </div>
+
+								<p class="panel_text">Payne furnaces like the Payne PG8MEA gas furnace are known for work-horse reliability and very good performance at reasonable prices.  Lower initial costs are added to good fuel efficiency for a winning combination.</p>
+							  
+								
+							</div>
+						</div>	
+			        </div>
+			    </div>
+         </div>
+      </div>
+
+      <div class="item">
+         <div class="container">
+
+			    <div class="row">
+
+					<div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork5.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Your Home, Your Refuge</h4>
+							    </div>
+								<p class="panel_text">Relax and enjoy your winter refuge with exceptional comfort and savings. The variable-speed Model 926T delivers evenly controlled airflow and a significant reduction in temperature swings . As the focal point for year-round comfort, this furnace offers enhanced summer humidity control capabilities as well.</p>
+							  
+								
+							</div>
+						</div>	
+			        </div>
+			        <div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork6.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Atmospheric Vent Gas Models</h4>
+							    </div>
+								<p class="panel_text">Bradford White's Defender System Atmospheric Vent water heaters utilize a draft diverter and are atmospherically vented with capacities ranging from 30 to 50 gallons and inputs ranging from 30,000-50,000 BTU/Hr. Defender Atmospheric Vent models are perfect for many standard water heating applications</p>
+							  
+
+								
+							</div>
+						</div>	
+			        </div>
+			        <div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork7.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Quiet Comfort, and Cool Savings</h4>
+							    </div>
+								<p class="panel_text">Enjoy cool, summer comfort and energy savings of up to 16 SEER with our single-stage Preferred central air conditioner. This model can help cut your utility bills while you relax with reliable whole-home comfort that's as quiet as running your dishwasher.</p>
+							  
+
+							</div>
+						</div>	
+			        </div>
+					<div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork8.JPG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Work-Horse Reliability at a Reasonable Price</h4>
+							    </div>
+
+								<p class="panel_text">Payne furnaces like the Payne PG8MEA gas furnace are known for work-horse reliability and very good performance at reasonable prices.  Lower initial costs are added to good fuel efficiency for a winning combination.</p>
+							  
+								
+							</div>
+						</div>	
+			        </div>
+			    </div>
+         </div>
+      </div>
+
+      <div class="item">
+         <div class="container">
+
+			    <div class="row">
+
+					<div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork9.JPEG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Your Home, Your Refuge</h4>
+							    </div>
+								<p class="panel_text">Relax and enjoy your winter refuge with exceptional comfort and savings. The variable-speed Model 926T delivers evenly controlled airflow and a significant reduction in temperature swings . As the focal point for year-round comfort, this furnace offers enhanced summer humidity control capabilities as well.</p>
+							  
+								
+							</div>
+						</div>	
+			        </div>
+			        <div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork10.JPEG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Atmospheric Vent Gas Models</h4>
+							    </div>
+								<p class="panel_text">Bradford White's Defender System Atmospheric Vent water heaters utilize a draft diverter and are atmospherically vented with capacities ranging from 30 to 50 gallons and inputs ranging from 30,000-50,000 BTU/Hr. Defender Atmospheric Vent models are perfect for many standard water heating applications</p>
+							  
+
+								
+							</div>
+						</div>	
+			        </div>
+			        <div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork11.JPEG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Quiet Comfort, and Cool Savings</h4>
+							    </div>
+								<p class="panel_text">Enjoy cool, summer comfort and energy savings of up to 16 SEER with our single-stage Preferred central air conditioner. This model can help cut your utility bills while you relax with reliable whole-home comfort that's as quiet as running your dishwasher.</p>
+							  
+
+							</div>
+						</div>	
+			        </div>
+					<div class="col-md-3">
+						<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+						
+							<div class="panel-heading">
+							
+								<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork12.JPEG"></a></h4>
+								
+							</div>
+							
+							<div class="panel-body">
+							    <div class="panel-work-title">
+									<h4 class="panel_header">Work-Horse Reliability at a Reasonable Price</h4>
+							    </div>
+
+								<p class="panel_text">Payne furnaces like the Payne PG8MEA gas furnace are known for work-horse reliability and very good performance at reasonable prices.  Lower initial costs are added to good fuel efficiency for a winning combination.</p>
+							  
+								
+							</div>
+						</div>	
+			        </div>
+			    </div>
+         </div>
+      </div>
+    
+
+    </div>
+
+    
+    <a class="left carousel-control" href="#ourWorkCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#ourWorkCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+-->
+
 
 <section class="ourWork" style="padding-top:50px; padding-bottom: 50px; background-color:#f5f5f585">
   <div class="container">
@@ -191,38 +495,39 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
     <div class="row">
 
 		<div class="col-md-3">
-			<div class="panel panel-default panel-front">		
+			<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork1.JPG"></a></h4>
+					<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork1new.JPG"></a></h4>
 					
 				</div>
 				
 				<div class="panel-body">
-				
-					<h4>Lorem Ipsum</h4>
-				
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur. 
+				    <div class="panel-work-title">
+						<h4>Your Home, Your Refuge</h4>
+				    </div>
+					<p>Relax and enjoy your winter refuge with exceptional comfort and savings. The variable-speed Model 926T delivers evenly controlled airflow and a significant reduction in temperature swings . As the focal point for year-round comfort, this furnace offers enhanced summer humidity control capabilities as well.</p>
 				  
 					
 				</div>
 			</div>	
         </div>
         <div class="col-md-3">
-			<div class="panel panel-default panel-front">		
+			<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork2.JPG"></a></h4>
+					<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork2new.JPG"></a></h4>
 					
 				</div>
 				
 				<div class="panel-body">
-				
-					<h4>Lorem Ipsum</h4>
-				
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur.
+
+				    <div class="panel-work-title">
+						<h4>Atmospheric Vent Gas Models</h4>
+				    </div>
+					<p>Bradford White's Defender System Atmospheric Vent water heaters utilize a draft diverter and are atmospherically vented with capacities ranging from 30 to 50 gallons and inputs ranging from 30,000-50,000 BTU/Hr. Defender Atmospheric Vent models are perfect for many standard water heating applications</p>
 				  
 
 					
@@ -230,38 +535,39 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 			</div>	
         </div>
         <div class="col-md-3">
-			<div class="panel panel-default panel-front">		
+			<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork3.JPG"></a></h4>
+					<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork3new.JPG"></a></h4>
 					
 				</div>
 				
 				<div class="panel-body">
-				
-					<h4>Lorem Ipsum</h4>
-				
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur.
+				    <div class="panel-work-title">
+						<h4>Quiet Comfort, and Cool Savings</h4>
+				    </div>
+					<p>Enjoy cool, summer comfort and energy savings of up to 16 SEER with our single-stage Preferred central air conditioner. This model can help cut your utility bills while you relax with reliable whole-home comfort that's as quiet as running your dishwasher.</p>
 				  
 
 				</div>
 			</div>	
         </div>
 		<div class="col-md-3">
-			<div class="panel panel-default panel-front">		
+			<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a HREF="#"><img src="<?php echo get_template_directory_uri(); ?>/images/ourWork4.JPG"></a></h4>
+					<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo get_template_directory_uri(); ?>/images/ourWork4new.JPG"></a></h4>
 					
 				</div>
 				
 				<div class="panel-body">
-				
-					<h4>Lorem Ipsum</h4>
-				
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus a ante cursus ullamcorper. Praesent auctor massa at enim ornare efficitur.
+				    <div class="panel-work-title">
+						<h4>Work-Horse Reliability at a Reasonable Price</h4>
+				    </div>
+
+					<p>Payne furnaces like the Payne PG8MEA gas furnace are known for work-horse reliability and very good performance at reasonable prices.  Lower initial costs are added to good fuel efficiency for a winning combination.</p>
 				  
 					
 				</div>
@@ -270,9 +576,9 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
     </div>
   </div>
      
-
-  </div>
 </section>
+
+
 
 <section id="services" class="services">
 
@@ -438,6 +744,36 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 	</div>
 </section>
 
+<!-- line modal -->
+<div class="modal fade" id="ourWorkModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+			<!-- <h3 class="modal-title" id="modalPanelHeader"></h3> -->
+		</div>
+		<div class="modal-body">
+			
+            <!-- content goes here -->
+			<div class="panel panel-default panel-front">		
+						
+				<div class="panel-heading">
+				
+					<h4 class="panel-title"><a href="#"><img style="max-height: 100%; max-width: 100%;" id="modalPanelImage" src=""></a></h4>
+					
+				</div>
+				
+				<!-- <div class="panel-body">
+				    
+					<p id="modalPanelText"></p>
+
+				</div> -->
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+
 <script type="text/javascript">
 	
 
@@ -465,6 +801,17 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 		check_upload();
 	});
 
+    function setOurWorkModalContent(element){
+
+
+    	var panel_header = element.find('.panel_header').html();
+    	var panel_text = element.find('.panel_text').html();
+    	var img_src = element.find('.panel_image').attr('src');
+
+    	$("#modalPanelHeader").html(panel_header);
+    	$("#modalPanelText").html(panel_text);
+    	$("#modalPanelImage").attr('src', img_src);
+    }
 
 </script>
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <br>
-<div style="margin-top:160px;">
+<div style="margin-top:120px;">
 	<?php get_sidebar(); ?>
 
 	<code style="display:none;">single.php</code>
