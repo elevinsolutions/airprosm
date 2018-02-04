@@ -504,7 +504,7 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 
 
     	<?php $post_count_display_limit = 4; ?>
-		<?php if ( $category_query->have_posts() ) : $i = 1; while ( $category_query->have_posts() && $i < $post_count_display_limit + 1 ) : the_post(); ?>
+		<?php if ( $category_query->have_posts() ) : $i = 1; while ( $category_query->have_posts() && $i < $post_count_display_limit + 1 ) : $category_query->the_post(); ?>
 		   
 
 			<?php 
