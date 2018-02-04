@@ -19,7 +19,7 @@
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/air-conditioning/"><img src="<?php echo get_template_directory_uri(); ?>/images/AirConditionPrev.jpeg"></a></h4>
+					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/air-conditioning/"><img src="<?php echo get_template_directory_uri(); ?>/images/ProductAC.jpg"></a></h4>
 					
 				</div>
 				
@@ -36,7 +36,7 @@
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/boilers/"><img src="<?php echo get_template_directory_uri(); ?>/images/BoilersPrev.jpeg"></a></h4>
+					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/boilers/"><img src="<?php echo get_template_directory_uri(); ?>/images/ProductBoiler.jpg"></a></h4>
 					
 				</div>
 				
@@ -52,7 +52,7 @@
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/commercial-rooftop-units/"><img src="<?php echo get_template_directory_uri(); ?>/images/CommercialRooftopPrev.jpeg"></a></h4>
+					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/commercial-rooftop-units/"><img src="<?php echo get_template_directory_uri(); ?>/images/ProductRooftop.jpg"></a></h4>
 					
 				</div>
 				
@@ -101,7 +101,7 @@
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/furnaces/"><img src="<?php echo get_template_directory_uri(); ?>/images/Furnaces.jpeg"></a></h4>
+					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/furnaces/"><img src="<?php echo get_template_directory_uri(); ?>/images/ProductFurnace.jpg"></a></h4>
 					
 				</div>
 				
@@ -165,7 +165,7 @@
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/residential-controls/"><img src="<?php echo get_template_directory_uri(); ?>/images/ResidentialControls.jpeg"></a></h4>
+					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/residential-controls/"><img src="<?php echo get_template_directory_uri(); ?>/images/ProductResidentC.jpg"></a></h4>
 					
 				</div>
 				

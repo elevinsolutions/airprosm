@@ -11,7 +11,7 @@
             	
             	<!-- loop all parent categories -->
 		        <? foreach(get_categories(array('parent' => 0)) as $category): ?>
-
+		        <? if ($category->name != 'Our Work' && $category->name != 'Uncategorized'): // exlude these categories from display?>
 		            <div class="panel panel-default accordion-toggle" >
 		              <div class="panel-heading <? if (is_category($category->cat_ID)) echo 'active';  ?>">
 		                <h4 class="panel-title">
@@ -42,7 +42,7 @@
 		                </div>
 		              </div>
 		            </div>
-
+		        <? endif; ?>
 				<? endforeach; ?>
 
     </div> <!-- container -->

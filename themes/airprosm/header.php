@@ -862,6 +862,16 @@
 
             .navbutton {
                 font-size:14px !important;
+                display:none;
+            }
+
+            .navbar-quote {
+            	padding-top: 0px;
+    			padding-bottom: 5px;
+            }
+
+            .navbar-quote button {
+            	font-size: 15px !important;
             }
 
             .navbar-form {
@@ -966,7 +976,7 @@
                         /* border-color: #eea236; */
                         font-size: 17px;">
                     Financing Available</a>
-                  <form class="navbar-form navbar-right " style="margin: 0;">
+                  <form class="navbar-form navbar-right navbar-quote d-sm-none" style="margin: 0;">
                     <button type="button" data-toggle="modal" data-target="#quoteModal" class="btn btn-warning btn-getaquote " style="    margin-top: 0;
                         color: #944848;
                         background-color: #ffffff;
