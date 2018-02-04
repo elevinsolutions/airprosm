@@ -494,9 +494,17 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 
     <div class="row">
 
-    	<?php query_posts('cat=25'); ?> <!-- 25 is the category id of "Our Work" posts -->
+    	<?php
+		$category_query_args = array(
+		    'category_name' => 'Our Work'
+		);
+
+		$category_query = new WP_Query( $category_query_args );
+		?>
+
+
     	<?php $post_count_display_limit = 4; ?>
-		<?php if ( have_posts() ) : $i = 1; while ( have_posts() && $i < $post_count_display_limit + 1 ) : the_post(); ?>
+		<?php if ( $category_query->have_posts() ) : $i = 1; while ( $category_query->have_posts() && $i < $post_count_display_limit + 1 ) : the_post(); ?>
 		   
 
 			<?php 
