@@ -36,7 +36,7 @@
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/boilers/"><img src="<?php echo get_template_directory_uri(); ?>/images/ProductBoiler.jpg"></a></h4>
+					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/boilers/"><img src="<?php echo get_template_directory_uri(); ?>/images/boiler.png"></a></h4>
 					
 				</div>
 				
@@ -117,7 +117,7 @@
 			
 				<div class="panel-heading">
 				
-					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/iaq/"><img src="<?php echo get_template_directory_uri(); ?>/images/iaq.jpeg"></a></h4>
+					<h4 class="panel-title"><a href="<?php echo get_bloginfo('wpurl'); ?>/category/iaq/"><img src="<?php echo get_template_directory_uri(); ?>/images/iaq.jpg"></a></h4>
 					
 				</div>
 				

@@ -519,6 +519,46 @@
         .footerContainer a {
             color:white;
         }
+
+        /** modal style for get a quote**/
+
+        .modalquote .modal-title {
+        	color: #5d5d5d;
+        	font-weight: 700;
+        	font-size: 28px;
+        }
+
+        .modalquote .modal-header {
+		    border-bottom: 8px solid #f1f3f5;
+		}
+      
+        .modal-body {
+        	padding-bottom: 80px;
+        }
+
+		.modalquote .contactInfoText {
+			font-weight: 600;
+			color:#5d5d5d;
+		}
+
+		.modalquote .inquiringText {
+			color: #5d5d5d;
+            font-style: italic;
+		}
+
+        .modalquote .modalclosebutton {
+        	padding: 9px;
+		    padding-top: 2px;
+		    border: 1px solid transparent;
+		    padding-bottom: 2px;
+		    border-radius: 50px;
+		    transition: all .1s ease-in-out;
+        }
+
+        .modalquote .modalclosebutton:hover {
+        	color:white;
+        	background-color: #ff0101;
+        }
     </style>
 
     <!-- TESTIMONIALS SNIPPET -->
@@ -1013,7 +1053,7 @@
 </nav>
 
 .<!-- line modal -->
-<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal fade modalquote" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -1021,7 +1061,7 @@
     <form method="post" enctype="multipart/form-data">
     <input type="hidden" name="action" value="quote">
         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <button type="button" class="close modalclosebutton" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
             <h3 class="modal-title" id="lineModalLabel">Get a Quote</h3>
         </div>
 
@@ -1031,13 +1071,13 @@
 
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <h4>Contact Info</h4>
+                        <h4 class="contactInfoText">Contact Info</h4>
                         <input type="text" name="contact_name" class="form-control" placeholder="Full Name" required> <br>
                         <input type="email" name="email" class="form-control" placeholder="Email" required> <br>
                         <input type="text" name="phone" class="form-control" placeholder="Contact Number" required>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <h4>What are you inquiring about?</h4>
+                        <h4 class="inquiringText">What are you inquiring about?</h4>
                         <select name="category" class="form-control" name="category" required>
                             <option> -- Select Product (if applicable) -- </option>
 
