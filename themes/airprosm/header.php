@@ -215,7 +215,13 @@
         .navbar-details {
             float:right;
         }
-        
+
+        .main-nav
+        {
+            float: left !important;
+        }
+
+
         .hero {
 
         }
@@ -559,6 +565,10 @@
         	color:white;
         	background-color: #ff0101;
         }
+
+        #sidebar {
+                margin-top: inherit;
+       }
     </style>
 
     <!-- TESTIMONIALS SNIPPET -->
@@ -777,13 +787,17 @@
         }
         @media(max-width: 550px) {
             
+            .main-nav {
+            	float:none !important;
+            }
+
             .navbar-inverse {
-                background-color: #dc4848;
+                background-color: #fb4747;
                 border-color: transparent;
             }
             
             .navbar-details {
-                 background-color: #dc4848;
+                 background-color: #fb4747;
                  float:initial;
                  padding-top:0px !important;
             }
@@ -814,12 +828,24 @@
                 margin-top:0;
             }
             .heroImage {
-                height:635px;
+                height:245px;
                 background-position:center;
+                margin-top: 40px;
+            }
+
+            .heroImage2 {
+            	margin-top: 40px;
+                background-position:center;
+                height: 245px;
+
             }
 
             .heroInsideContent {
-                padding-top:220px;
+                padding-top: 50px;
+            }
+
+            .heroMainTitle h2 {
+            	font-size:2.0em;
             }
 
             .hero .btn-hero {
@@ -845,12 +871,20 @@
                 text-align:left;
              }
 
+             .weAre {
+             	margin-top:50px;
+             }
+
              #testimonial4 .carousel-inner {
                 margin-top: -20px;
              }
 
              #sidebar {
-                margin-top: 215px;
+                margin-top: inherit;
+             }
+
+             #heroCarousel .carousel-control{
+             	display: none;
              }
 
             .productsPage img {
@@ -1001,9 +1035,9 @@
                 
                 <a class="navbar-brand" href="<?php echo get_site_url(); ?>"></a>
 
-                 <div class="navbar-details" style="text-align: center;
+                 <div class="navbar-details hidden-xs" style="text-align: center;
                         padding-top: 10px;">
-                  <a class="telnumber" href="tel:1-630-779-5555" style="font-family: Arial;
+                  <a class="telnumber" href="tel:1-630-779-3805" style="font-family: Arial;
                         font-weight: 800; color: white;
                         font-size: 24px;">
                     1-630-779-3805</a>
@@ -1032,7 +1066,34 @@
 
 
             
-            <div class="navbar-collapse collapse navbar-right main-nav" id="navbar" style="float: left !important;">
+            <div class="navbar-collapse collapse navbar-right main-nav" id="navbar">
+
+            	<div class="navbar-details visible-xs" style="text-align: center;
+                        padding-top: 10px;">
+                  <a class="telnumber" href="tel:1-630-779-3805" style="font-family: Arial;
+                        font-weight: 800; color: white;
+                        font-size: 24px;">
+                    1-630-779-3805</a>
+                  <h1 style="font-size: 0.9em;
+                        margin-top: 0;
+                        font-family: arial; color:white;">
+                    24 Hour Emergency Service Available</h1>
+                  <a class="navbutton btn" href="https://microf.com/customers/" class="btn" style="color: #944848;
+                        background-color: #ffffff;
+                        /* border-color: #eea236; */
+                        font-size: 17px;">
+                    Financing Available</a>
+                  <form class="navbar-form navbar-right navbar-quote d-sm-none" style="margin: 0;">
+                    <button type="button" data-toggle="modal" data-target="#quoteModal" class="btn btn-warning btn-getaquote " style="    margin-top: 0;
+                        color: #944848;
+                        background-color: #ffffff;
+                        font-size: 18px;">
+                    Get a Quote</button>
+
+                  </form>
+                </div>
+
+
                 <ul class="nav navbar-nav navbar-margin">
                     <li id="sub-1"><a href="<?php echo get_bloginfo('wpurl'); ?>#weAre" onclick="scrollToPage('weAre');return false;">HOME</a>
                     </li>

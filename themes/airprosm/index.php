@@ -48,7 +48,7 @@
             <div class="heroInsideContent" style="text-align:center;">
             	<div class="container">
             		<div class="heroMainTitle">
-		                <h2 style="font-size:45px; font-family: 'Roboto Condensed', sans-serif;">Heat up!</h2>
+		                <h2 style="font-family: 'Roboto Condensed', sans-serif;">Heat up!</h2>
 		                <h4 style="font-size:23px; font-family: 'Roboto Condensed', sans-serif; text-shadow:-9px 2px 10px rgb(85, 85, 85);">Winter is here and Air Pros Mechanical has the products for your heating needs!</h4>
 	                </div>
 	                <div style="margin-bottom:50px"></div>
