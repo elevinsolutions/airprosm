@@ -282,12 +282,12 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 	</div>
 
 	<div id="ourWorkCarousel" class="carousel slide" data-ride="carousel">
-    
+<!--     
 	    <ol class="carousel-indicators">
 	      <li data-target="#ourWorkCarousel" data-slide-to="0" class="active"></li>
 	      <li data-target="#ourWorkCarousel" data-slide-to="1"></li>
 	      <li data-target="#ourWorkCarousel" data-slide-to="2"></li>
-	    </ol>
+	    </ol> -->
 
 	    
 	    <div class="carousel-inner">
@@ -336,8 +336,7 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 			</div>
 
 
-
-
+			<?php if ( $category_query->have_posts() && $i > 5) : $j = 1;  ?>
 			<div class="item">
 				<div class="container">
 					<div class="row">
@@ -352,7 +351,7 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 
 
 			<?php $post_count_display_limit = 8; ?>
-			<?php if ( $category_query->have_posts() && $i > 4) : $j = 1; while ( $category_query->have_posts() && $j < $post_count_display_limit + 1 ) : $category_query->the_post(); ?>
+			<?php while ( $category_query->have_posts() && $j < $post_count_display_limit + 1 ) : $category_query->the_post(); ?>
 			   
 
 				<?php 
@@ -381,12 +380,12 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 					        </div>
 					        <?endif;?>
 				
-			<?php $j++; endwhile; endif; ?>
+			<?php $j++; endwhile; ?>
 
 					</div>
 				</div>
 			</div>
-
+			<?php endif; ?>
 <!-- 
 	      <div class="item">
 	         <div class="container">
@@ -841,6 +840,34 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 
 <script type="text/javascript">
 	
+	$('#quote_form').submit(quote_form_ajax);
+	function quote_form_ajax(){
+
+          $.ajax({
+
+          type:"POST",
+          url: "<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php",
+          data: new FormData($('#quote_form')[0]),
+          cache: false,
+          contentType: false,
+          processData: false,
+          success:function(data){
+              console.log(data);  
+
+              if (data == 'wrong_captcha'){
+              	$('#captcha_error').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+              }
+              else if (data = 'success'){
+              	alert('You\'re quote has been submitted. We will get in touch with you soon.')
+              	$('#captcha_error').hide();
+              	$('#quote_form').trigger("reset");
+				$('#quoteModal').modal('toggle');      
+              }
+            }
+          });
+
+          return false;
+        }
 
 	function scrollToPage(section){
       $('html, body').animate({

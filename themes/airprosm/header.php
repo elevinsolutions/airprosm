@@ -1157,15 +1157,14 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
-    <?php include 'includes/quote_form.php'; ?>
-    <form method="post" enctype="multipart/form-data">
-    <input type="hidden" name="action" value="quote">
+    <form method="post" id="quote_form">
+    <input type="hidden" name="action" value="addQuote">
         <div class="modal-header">
             <button type="button" class="close modalclosebutton" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
             <h3 class="modal-title" id="lineModalLabel">Get a Quote</h3>
         </div>
 
-        <div class="modal-body">
+        <div class="modal-body" style="padding-bottom: 30px;">
             
             <!-- content goes here -->
 
@@ -1188,6 +1187,15 @@
                             <? endforeach; ?>
                         </select> <br>
                         <textarea name="comment" style="height: 90px;" class="form-control" placeholder="Comments" required></textarea>
+                        <br>
+
+                        <?php 
+                            include "libraries/captcha/simple-php-captcha.php";
+                            $_SESSION['captcha'] = simple_php_captcha();
+                            echo '<img src="' . $_SESSION['captcha']['image_src'] . '" alt="CAPTCHA" style="width: 100px;"/>';
+                        ?>
+                        <input type="text" name="captcha" style="width: 200px; display: inline;" class="form-control" placeholder="Type code">
+                        <p style="display:none; font-size: 14px; color: red;" id="captcha_error" style="color: red; font-size: 15px;">Please enter the correct captcha code</p>
                     </div>
                 </div>
 
