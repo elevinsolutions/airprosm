@@ -184,7 +184,95 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 </section>
 
 <!-- SCROLLABLE OUR WORK -->
-<section class="ourWork" style="padding-top:50px; padding-bottom: 50px; background-color:#f5f5f585">
+<section class="ourWork small" style="padding-top:50px; padding-bottom: 50px; background-color:#f5f5f585">
+	
+	<div class="container">
+		<div class="row text-center">
+			       <h2 style="font-size: 35px;
+			    margin-bottom: 50px; color: #ab1e1e;">Our Work</h2>
+		</div>
+	</div>
+
+	<div id="ourWorkCarouselSmall" class="carousel slide" data-ride="carousel">
+
+	    <div class="carousel-inner">
+	    	<?php
+				$category_query_args = array( 'category_name' => 'Our Work' );
+				$category_query = new WP_Query( $category_query_args );
+			?>
+
+			<?php if ( $category_query->have_posts() ): $i = 1 ;while ( $category_query->have_posts()) : $category_query->the_post(); ?>
+
+			<?php 
+
+				if (has_post_thumbnail( $post->ID ) ){
+				  $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+				}
+				else{
+					// set default image here
+				}
+
+				$isActive = ($i == 1) ? 'active' : '';
+
+			?>
+
+			<div class="item <?=$isActive;?>">
+				<div class="container">
+					<div class="row col-sm-6 col-sm-offset-3" >
+						<div class="col-md-3">
+							<div class="panel panel-default panel-front" onclick="setOurWorkModalContent($(this));">		
+								<div class="panel-heading">
+									<h4 class="panel-title"><a HREF="#" data-toggle="modal" data-target="#ourWorkModal"><img class="panel_image" src="<?php echo $image[0]; ?>"></a></h4>
+								</div>
+								<div class="panel-body">
+								    <div class="panel-work-title">
+										<h4><?php the_title(); ?></h4>
+								    </div>
+									<p><?php the_content(); ?></p>
+								</div>
+							</div>	
+				        </div>
+					</div>
+				</div>
+			</div>
+
+			<?php $i++; endwhile; endif; ?>
+	    </div>
+	    
+	    <ol class="carousel-indicators" style="text-align: center; list-style: none;">
+
+	    <?php
+				$category_query_args = array( 'category_name' => 'Our Work' );
+				$category_query = new WP_Query( $category_query_args );
+			?>
+
+			<?php if ( $category_query->have_posts() ): $i = 1 ;while ( $category_query->have_posts()) : $category_query->the_post(); ?>
+
+			<?php 
+
+				$isActive = ($i == 1) ? 'active' : '';
+
+			?>
+
+	      <li style="border: 1px solid black;" data-target="#ourWorkCarouselSmall" data-slide-to="<?=$i-1;?>" class="<?=$isActive;?>"></li>
+
+	    <?php $i++; endwhile; endif; ?>
+	    </ol>
+
+	    <a class="left carousel-control small" href="#ourWorkCarouselSmall" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control small" href="#ourWorkCarouselSmall" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+
+	</div>
+</section>
+
+<!-- SCROLLABLE OUR WORK -->
+<section class="ourWork medium" style="padding-top:50px; padding-bottom: 50px; background-color:#f5f5f585">
 	
 	<div class="container">
 		<div class="row text-center">
@@ -195,12 +283,12 @@ Call us today and let’s talk about how we can help you with your HVAC needs.
 
 	<div id="ourWorkCarousel" class="carousel slide" data-ride="carousel">
     
-	    <!-- <ol class="carousel-indicators">
+	    <ol class="carousel-indicators">
 	      <li data-target="#ourWorkCarousel" data-slide-to="0" class="active"></li>
 	      <li data-target="#ourWorkCarousel" data-slide-to="1"></li>
 	      <li data-target="#ourWorkCarousel" data-slide-to="2"></li>
 	    </ol>
- -->
+
 	    
 	    <div class="carousel-inner">
 

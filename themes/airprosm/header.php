@@ -1020,6 +1020,45 @@
             }
         }
     </style>
+
+    <style>
+        
+        @media (max-width: 991px){
+            
+            @media (max-width: 767px){
+                .carousel-control.small{
+                    display:none;
+                }
+            }
+
+            .ourWork.small{
+                display: block;
+            }
+
+            .ourWork.medium{
+                display:none;
+            }
+
+            .ourWork.small .carousel-indicators{
+                bottom: -25px;
+            }
+
+            .ourWork.small .carousel-indicators li.active{
+                background-color: black;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            .ourWork.small{
+                display: none;
+            }
+            .ourWork.medium{
+                display:block;
+            }
+        }
+
+    </style>
 </head>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
