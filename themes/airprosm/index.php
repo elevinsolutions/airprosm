@@ -18,7 +18,7 @@
             	<div class="container">
             		<div class="heroMainTitle">
 		                <h2>Stay Comfortable At Home All Year Round</h2>
-		                <h4 style="font-size:21px;">Air Pros Mechanical has the solution for every heating and air conditioning needs.</h4>
+		                <h4 style="font-size:21px;">Air Pros Mechanical has the solution for all your heating and air conditioning needs.</h4>
 	                </div>
 	                <div style="margin-bottom:50px"></div>
 
@@ -124,7 +124,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="leftSideWeAre">
-                    <h4>We are..</h4>
+                    <h4>We are</h4>
                     <h1>Air Pros Mechanical</h1>
 
                     <p>Since 2013, Air Pros Mechanical, Inc. has been installing and repairing heating and air conditioning systems in Chicagoland and surrounding suburbs. We are a Bryant dealer with a team of highly-trained, licensed sales engineers and field technicians. Integrity is our foremost value and we assure transparency when it comes to telling customers how much it would cost to complete the job perfectly. This is why we are one of the most trusted HVAC companies in our service area.

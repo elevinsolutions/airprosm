@@ -455,7 +455,7 @@
         }
         
         .ourWork .panel-body {
-            height:320px;
+            height:380px;
         }
 
         .ourWork .panel-work-title{
