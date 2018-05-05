@@ -101,7 +101,7 @@ function addQuote(){
 				
 				wp_mail( $to, $subject, $message );
 
-				echo "success";
+				echo "success2";
 			} catch (Exception $e) {
 				// echo $e;
 				echo "error";
